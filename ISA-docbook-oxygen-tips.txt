@@ -1,0 +1,41 @@
+oxygen editor and docbook use:
+
+1. create a specific css stylesheet for the html output
+2. save it under Application/oxygen/frameworks/docbook/css , in our example we call it prs-custom.css
+
+
+note: do not confuse this location with $USER_HOME/Library/Application Support/OxygenXMLEditor/samples/css
+
+note: editing docbook.css under Application/oxygen/frameworks/docbook/css modifies the rendering of the xml in the author tool but not in the HTML
+
+
+3. use the transformation scenario to switch between either pdf and html conversion from docbook xml.
+
+4. use the chunk.xsl transformation instead of the default docbook.xsl to produce a paginated html output.
+
+	configure the scenario and modify the following parameters:
+		-select DocBook HTML
+		-hit the duplicate button
+		-then edit
+		
+			-in the xslt Tab, set the XSL URL to be "${frameworks}/docbook/xsl/html/chunk.xsl"
+			-then hit the 'parameters' button:
+				-look for the following elements
+					-base.dir: -> set it to $USER_HOME/git/docbooks
+					-html.stylesheet -> set it to be : ${frameworks}/docbook/css/prs-custom.css
+					(i.e. pointing to the css stylesheet created in step1)
+					click 'OK'
+			click 'OK'
+	click 'Transform now'
+	
+The result of the xsl transformation applied to the isa docbook should now be found under $USER_HOME/git/docbooks	
+
+
+tip:
+if the inclusion of a snippet of xml code in a docbook document is needed, use the <!CDATA[ opening element and ]]> closing element to insert those snippets.
+use css to style them as necessary.
+
+warning: it causes the xml snippet to be excluded from the pdf conversion though
+
+	
+					
