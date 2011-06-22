@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" type="xml"?>
+<book xmlns="http://docbook.org/ns/docbook" 
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+	<info>
+		<title>ISA Software Suite Documentation</title>
+		<legalnotice id="legalnotice">
+	 	<title>This documentation is distributed under Creative Commons	Attribution-ShareAlike 3.0 Unported License</title>
+		<screenshot>
+			<mediaobject>
+				<imageobject>
+					<imagedata scale="15" align="center"
+						fileref="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+						format="PNG"/>
+				</imageobject>
+			</mediaobject>
+			<!--<mediaobject>
+				<imageobject>
+					<imagedata scale="20" align="center"
+						fileref="../../git/ISAvalidator-ISAconverter-BIImanager/val_conv_manager_gui/src/main/resources/images/DataManager/loader_logo.png"
+						format="PNG"/>
+				</imageobject>
+			</mediaobject>-->
+		</screenshot>
+		<!-- <para>This documentation is distributed under <link
+			xlink:href="http://creativecommons.org/licenses/by-sa/3.0/"> Creative Commons
+			Attribution-ShareAlike 3.0 Unported License </link>
+		</para>
+		-->
+		
+	 </legalnotice>
+		<copyright>
+			<year>2008-2011 ISA Team</year>
+		</copyright>
+	</info>	
+	<xi:include href="BII-webapplication-installation.xml"/>	
+	<xi:include href="BII-Data-Manager-userguide.xml"/>
+<!--	<xi:include href="biidatamanager_doc/BII-Data-Manager-userguide.xml"/>-->
+	<xi:include href="ISAconfigurator-userguide.xml"/>
+	<xi:include href="ISAcreator-userguide.xml"/>	
+</book>

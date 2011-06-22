@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" type="xml"?>
+
+<chapter id="biiwebapp" chunked="0" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.0">
+<info> 
+        <title>BII web application 1.4 installation guidelines</title>
+<!--<author>
+<orgname>ISA Team</orgname>
+<address>
+<city>Oxford</city>
+<street>7 Keble Road</street>
+<postcode>OX1 3QG</postcode>
+<country>United Kingdom</country>
+</address>
+<email>isatools@googlegroups.com</email>
+</author>-->
+        <releaseinfo>BII Web Application version 1.4</releaseinfo>
+        <pubdate>2011-06-22</pubdate>
+        <legalnotice>
+            <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata scale="20" align="center"
+                            fileref="https://github.com/ISA-tools/ISAvalidator-ISAconverter-BIImanager/blob/master/val_conv_manager_gui/src/main/resources/images/DataManager/loader_logo.png?raw=true"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot>
+            <para>
+
+                    This documentation is distributed under           
+                    <screenshot>               
+                        <mediaobject>
+                            <imageobject>
+                                
+                                <imagedata scale="15" align="center"
+                                    fileref="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+                                    format="PNG"/>
+                                
+                            </imageobject>
+                        </mediaobject>                 
+                    </screenshot>
+                    <link xlink:href="http://creativecommons.org/licenses/by-sa/3.0/"> </link>
+
+            </para>
+        </legalnotice>   
+    </info>
+    
+<sect1 id="biiwebapp.intro">
+        <title>Introduction</title>
+        <sect2>
+        <title>What are BII-Manager and BII Web application?</title>
+        <itemizedlist>
+            <listitem><para><code>BII-Manager</code> is a standalone java application, that validates ISA-Tab formatted reports and persist encoded information
+to database backend. It relies on Hibernate Object persistence broker framework to convert objects into HQL statement for persistence. It is therefore necessary
+to provide BII-Manager with database connection information, a location where to write the database index and move the data files associated with ISA-Tab formatted metadata.
+            </para></listitem>
+            <listitem><para>BII Web application is the database front-end, accessible via an Internet browser (e.g. Firefox, Safari, InternetExplorer, Chrome). The web application
+                requires <code>Jboss Seam</code> web application server to installed and properly configured to run. The web application also requires database connection information, access to the database Lucene index and to the data file locations.
+            Those parameters are shared with the BII-Manager.</para></listitem>
+        </itemizedlist>
+        </sect2>
+    </sect1>
+    <sect1 id="biiwebapp.install">
+    <title>Installation</title>
+    <para> The following section will provide key information to help you install BII Web application and BII-DataManager.</para>
+    <sect2>
+        <title>Requirements</title>
+        <sect3>
+            <title>Java environment</title>
+            <para>We recommend having sun JDK 1.6 or higher installed. Please visit <link xlink:href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Oracle java download pages form more information</link></para>
+            <para>Environmental variable JAVA_HOME should also be configured.
+                <itemizedlist>
+                    <listitem><para>For Unix or MacOS users, make sure the following lines are present in <code>.bashrc</code> file:
+                        <prompt></prompt>
+                    </para>
+                    </listitem>                 
+                </itemizedlist>
+            </para>
+            <para>Prior to install the tools, irrespective of the operating system used, do
+                make sure that Java version 1.6 is deployed on the target machine and that JAVA_HOME
+                environmental variable has been set.</para>
+            <para>To check which version of Java is currently available, open a terminal and type
+                the following command:</para>
+            <para>
+                <prompt>c:>java -version</prompt>
+            </para>
+            <para> The result should look like this: </para>
+            <para>
+                <prompt>java version "1.6.0_22" Java(TM) SE Runtime Environment (build
+                1.6.0_22-b04-307-10M3261) Java HotSpot(TM) 64-Bit Server VM (build 17.1-b03-307,
+                mixed mode) 
+                </prompt>
+            </para>
+        </sect3>
+        <sect3>
+            <title>Build environment</title>
+            <para>BII web application relies on Maven build environment to handle all processes related to  dependency handling/downloading. Before starting, make sure <link xlink:href="http://maven.apache.org/download.html#Maven_2.0.1">Maven tool (version 2.1 and higher)</link> has been installed and properly configured.</para>
+            <para>Download Maven <link xlink:href="http://maven.apache.org/download.html">: Maven 2.2.1</link>
+            </para>
+            <para>The MAVEN_HOME Environmental variable should also be configured.</para>
+            
+        </sect3>
+        <sect3>
+            <title>Web application server</title>
+            <para>BII Web application relies on Entreprise Tools such as Jboss Seam web application server.</para>
+            <para>Download Maven <link xlink:href="http://www.jboss.org/jbossas/downloads/">: Jboss seam version 4.2.3GA up to 6.0Final</link>
+            </para>
+            <para>BII Web application 1.4 has been tested successfully on the following Jboss version:
+                <itemizedlist>
+                    <listitem><para><link xlink:href="http://sourceforge.net/projects/jboss/files/JBoss/JBoss-4.2.3.GA">4.2.3 GA</link></para></listitem>
+                    <listitem><para><link xlink:href="http://sourceforge.net/projects/jboss/files/JBoss/JBoss-5.0.1.GA">5.0.1 GA</link></para></listitem>
+                    <listitem><para><link xlink:href="http://sourceforge.net/projects/jboss/files/JBoss/JBoss-5.1.0.GA">5.1.0 GA</link></para></listitem>
+                    <listitem><para><link xlink:href="http://sourceforge.net/projects/jboss/files/JBoss/JBoss-6.0.0.Final">6.0.0 Final</link></para></listitem>
+                </itemizedlist>
+                Do check that JBoss web application server has been correctly installed. If testing on your local machine, open a web browser and point it to the following URL, <code>http://localhost:8080</code>
+                It should show the following:
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <!-- width="500"-->
+                            <imagedata align="center" scalefit="1" width="85%"
+                                fileref="./biiwebapp_images/BII-web-app-checking-jboss-port8080.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+                If you don't, you may have an application (possibly apache) already listening to port 8080.
+            </para>
+            <sect4>
+                <title>Changing Default Port</title>
+                <para>
+                A lot is available from the Jboss community, we recommend starting <link xlink:href="http://community.jboss.org/wiki/ConfigurePorts">here</link>.</para> 
+                <para>Starting from Jboss 5, the process essentially relies on starting jboss server by passing the virtual machine the jboss.service.binding.set argument as in:</para>
+                <para><prompt>run -Djboss.service.binding.set=ports-01</prompt></para>
+                <para>Alternately, editing the <code>"server/default/conf/bindingservice.beans/META-INF/bindings-jboss-beans.xml"</code> file. Refer to the link indicated above for more details.
+                </para>
+            </sect4>
+            <sect4><title>Configuring Jboss to run multiple instances of BII</title>
+                <para>work in progress. this section will be updated soon</para>
+            </sect4>
+            <sect4><title>Enabling authentication with LDAP server</title>
+                <para>work in progress. this section will be updated soon but some documentation is already available <link xlink:href="http://seamframework.org/Documentation/ConfigureSeamWithOpenLDAP">here</link></para>
+            </sect4>
+        </sect3>
+        <sect3>
+            <title>Relational Database Management System</title>
+            <para>BII Web application ships with profiles for H2, Oracle, MySQL and Postgresql RDBMS</para>
+            <sect4><title>H2 database</title>
+                <para>
+                <itemizedlist>
+                    <listitem><para>H2 database version 1.0.76</para></listitem>
+                    <listitem><para>JDBC driver version 1.0.76</para></listitem>
+                    <listitem><para>H2 does not need any configuration and was used as test environment</para></listitem>
+                </itemizedlist>
+                </para>
+            </sect4>
+            
+            
+            <sect4><title>PostgreSQL database</title>
+                <para>
+                    <itemizedlist>
+                        <listitem><para>PostgreSQL 8.4.1</para></listitem>
+                        <listitem><para>JDBC driver version postgresql-8.4-701.jdbc3.jar</para></listitem>
+                        <listitem><para>create a database namespace, in our example called 'bioinvindex'</para>
+                            <para>To do so, connect to PostgreSQL database server issueing the following command from a terminal:</para>
+                            <para><prompt>$/Library/PostgreSQL/8.4/bin/createdb -U postgresuser -E UTF-8 -e bioinvindex</prompt></para>
+                            <para>Supply the password associated to user "postgresuser". Now, ensure that the database has been successfully created by issueing:</para>
+                            <para><prompt>$/Library/PostgreSQL/8.4/bin/psql -U postgresuser bioinvindex</prompt></para>
+                            <para>Alternately, one could rely on administration tools such pgAdminIII to perform the set up.</para>
+                        </listitem>                            
+                    </itemizedlist>
+                </para>
+            </sect4>
+            <sect4><title>MySQL database</title>
+                <para>
+                <itemizedlist>
+                    <listitem><para>MySQL database version 5.39</para></listitem>
+                    <listitem><para>JDBC driver version 5.1.10</para></listitem>
+                    <listitem><para>create a database namespace, in our example called 'bioinvindex'</para>
+                    <para>To do so, connect to MySQL database server issueing the following command from a terminal:</para>
+                    <para><prompt> >mysql -u mysqluser -p</prompt></para>
+                    <para>Supply the password associated to user "mysqluser" and from the mysql prompt, issue</para>
+                    <para><prompt>mysql>CREATE DATABASE bioinvindex DEFAULT CHARACTER SET utf8;</prompt></para>
+                    <para>This command should display the following information (or similar)</para>
+                    <para>
+                        <prompt>Password for user postgres:</prompt>
+                    </para> 
+                <para>                        <prompt>psql (8.4.1)</prompt>
+                </para>
+                <para>
+                <prompt>Type "help" for help.</prompt>
+                </para>
+                <para>                        <prompt>bioinvindex#</prompt>
+                    </para>
+                    <para>Alternately, one could rely on administration tools such phpMyAdmin</para>
+                    </listitem>
+                </itemizedlist>
+                </para>
+            </sect4>
+            <sect4><title>Oracle database</title>
+                <para>
+                <itemizedlist>
+                    <listitem><para>Oracle database 11g </para></listitem>
+                    <listitem><para>JDBC driver version 11.1.0.7.0</para></listitem>
+                    <listitem><para>Consult with your Oracle DBA in order to configure a database.</para></listitem>
+                </itemizedlist>
+                    <note><para>Due to legal issue, we can not redistribute Oracle products. Oracle JDBC driver is available from
+                        <link xlink:href="http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html">here</link>:</para></note>
+                    
+                </para>
+            </sect4>
+        </sect3>
+        <sect3>
+            <title>ISA softwares: BII Data Manager and BII Web application</title>
+            <warning><para>
+               As we stated earlier, for  BII Data Manager and BII Web application to work together, both tools need to be configured so that the following parameters are the same:
+                <orderedlist>
+                    <listitem><para>Database connection parameters</para></listitem>
+                    <listitem><para>Lucene Index location</para></listitem>
+                    <listitem><para>Datafile locations</para></listitem>
+                </orderedlist>
+                We will now details how to set those parameters for each of the tools.
+            </para></warning>
+            <sect4>
+                <title>Editing hibernate.properties file to configure BII-Data-Manager</title>
+                <para>After having downloaded and uncompressed the BII-Data-Manager archive, navigate the ./BII-data-manager-1.3/config folder. The folder contains 4 <guilabel>hibernate.properties</guilabel> files, one for each the database profiles.
+                    
+                    <screenshot>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata scale="50"
+                                    fileref="./biidatamanager_doc/biidatamanager_images/BII-datamanager-folder-content.png"
+                                    format="PNG"/>     
+                            </imageobject>
+                        </mediaobject>
+                    </screenshot>
+                    </para>
+                    <para>Pick the one you need and edit as follows:</para>
+                    <para><orderedlist>
+                        <listitem><para>database configuration parameters</para>
+                            <para>The example below is for a mysql environment
+                             <programlisting>
+              
+                                 ====================  
+                                 <prompt>mysql database configuration</prompt>
+                                 <prompt>====================</prompt>
+                                 <prompt>hibernate.connection.username=CHANGEME</prompt>
+                                 <prompt>hibernate.connection.password=CHANGEME</prompt>
+                                 <prompt>hibernate.connection.url=jdbc:mysql:/CHANGEME</prompt>
+                                 <prompt>hibernate.connection.driver_class=com.mysql.jdbc.Driver</prompt>
+                                 <prompt>hibernate.dialog=org.hibernate.dialect.MySQL5InnoDBDialect</prompt>
+                             
+                             </programlisting>
+                            </para>
+                        </listitem>
+                        <listitem>
+                            <para>database indexing and search parameters
+                               
+                            <programlisting>
+                                
+                                hibernate.search.default.directory_provider=prg.hibernate.search.store.FSDirectoryProvider
+                                hibernate.search.default.indexBase=/vol/bioinvindex/lucene/
+                                hibernate.search.indexing_strategy=manual
+                            </programlisting>
+                                  
+                             <note>
+                                 <para>The path supplied to the indexBase should be the absolute path.</para>
+                             </note>           
+                            </para>
+                        </listitem>
+                    </orderedlist>
+                    
+                </para>
+            </sect4>
+            <sect4>
+                <title>Make JDBC driver available to BII-Data-Manager</title>
+                <para>
+                navigate the ./BII-data-manager-1.3/ folder and locate the run.bat file you are a Windows user or the run.sh file if running Mac OSX or Linux. Edit the file as follows:</para>
+                <para>
+                    <prompt>JDBCPATH=/Users/johnsmith/jdbc_drivers/mysql-connector-java.jar</prompt>
+                </para>
+                <para>If using windows, it will look like this</para>
+                <para>
+                    <prompt>SET JDBCPATH=C:\Users\johnsmith\jdbc_drivers\mysql-connector-java.jar</prompt>
+                </para>
+            </sect4>
+            <sect4>
+                <title>Edit the 'data_location.xml' file</title>
+                <para>Why do I need to do this?</para>
+                <para>Well, when persisting ISA-Tab formatted experimental data, BII-Data-Manager handles datafiles (image files, raw data file, derived data files)  to a specific location o
+                n the file system so they can be served by the web application for users to download. So BII-data-manager needs to know how to form valid URLs allowing access from the pages served by the web application.
+                The following steps detail how to perform this configuration task.</para>
+                <para>
+                    navigate the <code>./BII-data-manager-1.3/config</code> folder and locate the <code>'data_locations.xml'</code> file.Edit the file as follows:</para>
+                <orderedlist>
+                    <listitem><para>Set filesystem_path parameter</para>
+                        <para> <prompt>JDBCPATH=/Users/johnsmith/jdbc_drivers/mysql-connector-java.jar</prompt></para></listitem>
+                    <listitem><para>Set web_url parameter</para>
+                        <para> <prompt>web_rul=file:///tmp/bii_test_repo/microarray/study_${study-acc}/raw_data</prompt></para>
+                    </listitem>
+                </orderedlist>
+                
+  
+                <para>If using windows, it will look like this
+                    <warning>
+                        <para>Set Permissions Appropriately</para>
+                        <para>This is an important point. the BII-Data Manager needs to be granted read and write access rights to the chosen location for dispatching datafiles,logs and lucene indices during loading.</para>
+                    </warning>
+                </para>
+            </sect4>               
+</sect3>      
+        <sect3>
+        <title>Configuring and Building BII-Web application</title>      
+            <sect4>
+                <title>
+                    Editing <code>profiles.xml</code> file to configure BII-Web application 1.4
+                </title>
+                <para>After having downloaded and uncompressed the BII-Web Application archive, navigate the <code>./BioInvIndex-1.4/</code>. The folder content should look like this: 
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata scale="50"
+                                fileref="./biiwebapp_images/BII-web-application-folder-content.png"
+                                format="PNG"/>     
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+                
+                Open the profiles.xml file in a text editor and navigate the relevent database profile (choose from h2, mysql, postgres or oracle).
+                <orderedlist>
+                    <listitem><para>database configuration parameters</para>
+                        <para>The example below is for a mysql environment
+                            <programlisting>
+                            <![CDATA[ 
+                                <profile>
+                                    <id>mysql</id>
+                                    <activation>
+                                        <activeByDefault>false</activeByDefault>
+                                    </activation>
+                                    <properties>
+                                        <hibernate.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</hibernate.dialect>
+                                        <jdbc.groupId>mysql</jdbc.groupId>
+                                        <jdbc.artifactId>mysql-connector-java</jdbc.artifactId>
+                                        <jdbc.version>5.1.6</jdbc.version>
+                                        <jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
+                                        <jdbc.url>jdbc:mysql://localhost:33066/bioinvindex?profileSQL=false]]><![CDATA[</jdbc.url>
+                                        <jdbc.username>USERNAME</jdbc.username>
+                                        <jdbc.password>PASSWD</jdbc.password>
+                                    </properties>
+                              </profile>]]>
+                        </programlisting>
+                        </para>
+                    </listitem>
+                    <listitem>
+                        <para>set location to the lucene index file, required for database indexing and searches
+                            <programlisting>
+                               <![CDATA[
+                               <profile>
+                                    <id>index_local</id>
+                                    <activation>
+                                        <activeByDefault>false</activeByDefault>
+                                    </activation>
+                                    <properties>
+                                        <hibernate.search.default.indexBase>/vol/bioinvindex/lucene/</hibernate.search.default.indexBase>
+                                    </properties>
+                                </profile>]]>                
+                            </programlisting>
+                            <note>
+                                <para>The path supplied to the indexBase should be the absolute path.</para>
+                            </note>
+                            <warning>
+                                <para>Ensure that this path matches the one used when configuring the BII-Data-Manager while editing the hibernate.properties files. Failing to do will results in failure to properly list
+                                studies from the web application, and prevent from carrying out normal searches. Do double check!</para>
+                            </warning>                                
+                        </para>
+                    </listitem>
+                </orderedlist>
+                
+                </para>
+            </sect4>
+            <sect4>
+                <title>
+                    Building BII-web application with Maven
+                </title>
+                <note> <para>This step requires Maven to be installed and properly configured. See section 1 for more information.</para></note>
+                <para>
+                    Once the <code>'profiles.xml'</code> has been edited as instructed and save, it is possible to build the BII web application by issuing the following command:
+                    <itemizedlist>
+                        <listitem>
+                            <para>Using an H2 database</para>
+                            <para><prompt>>mvn clean package -Pdeploy,h2,index_local</prompt></para>
+                        </listitem>
+                        <listitem>
+                            <para>Using an Oracle database</para>
+                            <para><prompt>>mvn clean package -Pdeploy,oracle,index_local</prompt></para>
+                        </listitem>
+                        <listitem>
+                            <para>Using an mySQL database</para>
+                            <para><prompt>>mvn clean package -Pdeploy,mysql,index_local</prompt></para>
+                        </listitem>
+                        <listitem>
+                            <para>Using an PostgreSQL database</para>
+                            <para><prompt>>mvn clean package -Pdeploy,postgresql,index_local</prompt></para>
+                        </listitem>
+                    </itemizedlist>
+                    If all goes well, the process will create a 'target' directory as follows: <code>./BioInvIndex-1.3/ear/target</code> containing the <code>bii-1.3.ear</code> file.
+                </para>
+            </sect4> 
+            <sect4>
+                <title>
+                   Deploying BII-web application on Jboss Seam web application server
+                </title>
+                <para>
+                    To deploy the BII webapplication, simply copy the <code>bii-1.3.ear</code> file from the <code>./BioInvIndex-1.3/ear/target</code> to the '<code>../jboss/server/default/deploy</code>' location.</para>
+                    <para>
+                        
+                        <prompt>                       
+                        >cd /ear/target
+                        </prompt>
+                    </para>
+                    <para>   
+                        <prompt>
+                        >mv bii-1.3.ear [path to JBOSS]/jboss/server/default/deploy
+                        </prompt>
+                        
+                    </para>
+            </sect4> 
+              <sect4>
+                  <title>
+                      Starting the web application server
+                  </title>
+                  <para>
+                      Start Jboss web application server running the following command.</para>
+                  <para>
+                      <prompt>           
+                          >cd /path/to/jboss_installation/jboss/bin/
+                      </prompt>
+                  </para>
+                  <para>
+                      <prompt>    
+                          >./run.sh (Mac OS/Linux) or >./run.bat (windows) 
+                      </prompt>
+                  </para>
+              </sect4>
+              <sect4>
+                  <title>
+                     Checking the BII-web application is up and running
+                  </title>
+                  <para>
+                      Simply start a web browser and point to the following URL <code>http://localhost:8080/bioinvindex</code>, assuming the database namespace is bioinvindex and that <code>port 8080</code> is available to Jboss.
+                      
+                      Please refer to the troubleshooting section if necessary.</para>
+                  <para>
+                      <screenshot>
+                          <mediaobject>
+                              <imageobject> <!-- width="800" -->
+                                  <imagedata align="center" scalefit="1" width="85%" 
+                                      fileref="./biiwebapp_images/BII-web-app-database-newUI.png"
+                                      format="PNG"/>     
+                              </imageobject>
+                          </mediaobject>
+                      </screenshot>
+                  </para>
+              </sect4>      
+      
+        </sect3>
+   </sect2>  
+</sect1>
+
+
+<sect1><title>Troubleshooting</title>
+    <sect2><title>I have Apache server running and port 8080 is already in use, How can I change this?</title>
+    <para> </para></sect2>
+    <sect2><title>The browse view does not seem to work !</title>
+        <para>The most likely explanation is a mismatch between the path to index in the <code>pom.xml</code>  used to build the web application and the loader <code>hibernate.properties</code> files.
+            Please do check that both files rely on the same parameter and that read permissions are set correctly. This is essential for the database to resolve and access index.
+        </para>
+    <para> <!--      
+        <screenshot>
+            <mediaobject>
+                <imageobject>
+                    
+                    <imagedata align="center"  width="500"
+                        fileref=""
+                        format="PNG"/>     
+                </imageobject>
+            </mediaobject>
+            </screenshot> 
+        -->
+    </para>
+    </sect2>
+</sect1>
+    
+   
+</chapter>

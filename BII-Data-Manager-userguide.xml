@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" type="xml"?>
+<?xml-stylesheet type="text/css" href="../../../../../../../../Applications/oxygen/frameworks/docbook/css/docbook.css" title="default" alternate="no"?>
+<?xml-stylesheet type="text/xsl" href="../../../../../../../../Applications/oxygen/frameworks/docbook/xsl/html/docbook.xsl"?>
+<chapter id="biidatamanager" chunked="0" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.0"><?dbhtml filename="biidatamanager.html" ?>
+    <info>
+        <title>BII Data Manager 1.3 user guide</title>
+<!--<author>
+<orgname>ISA Team</orgname>
+<address>
+<city>Oxford</city>
+<street>7 Keble Road</street>
+<postcode>OX1 3QG</postcode>
+<country>United Kingdom</country>
+</address>
+<email>isatools@googlegroups.com</email>
+</author>-->
+        <releaseinfo>BII Manager version 1.3</releaseinfo>
+        <pubdate>2011-06-22</pubdate>
+        <legalnotice>
+            <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata scale="20" align="center"
+                            fileref="https://github.com/ISA-tools/ISAvalidator-ISAconverter-BIImanager/blob/master/val_conv_manager_gui/src/main/resources/images/DataManager/loader_logo.png?raw=true"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot>
+            <para>
+                This documentation is distributed under           
+                <screenshot>               
+                <mediaobject>
+                    <imageobject>
+                        
+                        <imagedata scale="15" align="center"
+                            fileref="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+                            format="PNG"/>
+                        
+                    </imageobject>
+                </mediaobject>                 
+            </screenshot>
+                <link xlink:href="http://creativecommons.org/licenses/by-sa/3.0/"> </link>
+            </para>
+        </legalnotice>
+    </info>
+    <sect1 id="biidatamanager.introduction">
+        <title>Introduction</title>
+        <sect2>
+            <title>What is BII-Data-Manager?</title>
+            <itemizedlist>
+                <listitem>
+                    <para>BII-Data-Manager is a standalone java application, that validates ISA-Tab
+                        formatted reports and persist encoded information to database backend. It
+                        relies on Hibernate Object persistence broker framework to convert objects
+                        into HQL statement for persistence. It is therefore encesassary to provide
+                        BII-Manager with database connection information as well as information to
+                        write the database index and move the data files associated with ISA-Tab
+                        formatted metadata. </para>
+                </listitem>
+                <listitem>
+                    <para>BII-Data-Manager also performs security and access rights managements.
+                        BII-Data-Manager also enables database reindexing as well as dataset tagging
+                        to highlight those compliant with MIBBI checklists.</para>
+                </listitem>
+            </itemizedlist>
+        </sect2>
+    </sect1>
+    <sect1 id="biidatamanager.installation">
+        <title>Installation</title>
+        <para> The following section will provide key information to help you install
+            BII-DataManager and BII Web application.</para>
+        <sect2>
+            <title>Requirements</title>
+            <sect3>
+                <title>BII-Data-Manager installed</title>
+                <para>Please refer to the <link
+                        xlink:href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"
+                        >Installation guidelines</link> before trying to use BII-Data-Manager</para>
+            </sect3>
+            <sect3>
+                <title> Starting BII-Data-Manager: </title>
+                <para>Simply issue to the following commands from the directory where
+                    BII-Data-Manager has been installed:</para>
+                <para><prompt> >run.bat</prompt> for Windows users.</para>
+                <para><prompt> >./run.sh</prompt> for Mac OSX or linux users.</para>
+                <para>The following screen should show indicated that the application has
+                    successfully started. <screenshot>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata align="center" width="500"
+                                    fileref="./biidatamanager_doc/biidatamanager_images/BII-Manager-Select-Config.png"
+                                    format="PNG"/>
+                            </imageobject>
+                        </mediaobject>
+                    </screenshot>
+                </para>
+                <para> BII-Data-Manager is part of the ISA infrastructure. As such, it shares a
+                    number of behavior with other tools such as ISAcreator. In particular, the first
+                    thing to do in order to run the tool is to select an ISAconfiguration: </para>
+                <para> Once done, one needs to create an account by clicking this icon: </para>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata scale="30"
+                            fileref="https://github.com/ISA-tools/ISAvalidator-ISAconverter-BIImanager/blob/master/val_conv_manager_gui/src/main/resources/images/DataManager/create_curator.png?raw=true"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+                <para>
+                    <screenshot>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata align="center" width="200"
+                                    fileref="./biidatamanager_doc/biidatamanager_images/BII-Data-Manager-create-account.png"
+                                    format="PNG"/>
+                            </imageobject>
+                        </mediaobject>
+                    </screenshot>
+                </para>
+                <para>
+                    <screenshot>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata align="center" width="200"
+                                    fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-account-created.png"
+                                    format="PNG"/>
+                            </imageobject>
+                        </mediaobject>
+                    </screenshot>
+                </para>
+                <para> Or login if an account already exists by filling the relevant fields and
+                    hitting the enter key or the login button: <mediaobject>
+                        <imageobject>
+                            <imagedata scale="15"
+                                fileref="https://github.com/ISA-tools/ISAvalidator-ISAconverter-BIImanager/blob/master/val_conv_manager_gui/src/main/resources/images/DataManager/login.png?raw=true"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </para>
+            </sect3>
+        </sect2>
+    </sect1>
+    <sect1 id="biidatamanager.using">
+        <title>Using BII Data Manager</title>
+        
+    <sect2 id="biidatamanager.using.loading">
+            <title>Data Loader Function</title>
+            <para> BII-Data-Manager is part of the ISA infrastructure. As such, it shares a number
+                of behavior with other tools such as ISAcreator. In particular, the first thing to
+                do in order to run the tool is to select an ISAconfiguration: </para>
+            <para> Once done, BII-Data-Manager screen will be displayed: <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="500"
+                                fileref="./biidatamanager_doc/biidatamanager_images/BII-Manager_MainMenu_page.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>To load, click the top left button: <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata scale="10"
+                                fileref="https://github.com/ISA-tools/ISAvalidator-ISAconverter-BIImanager/blob/master/val_conv_manager_gui/src/main/resources/images/DataManager/load_isatab.png?raw=true"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>
+                <orderedlist>
+                    <listitem>
+                        <para>Select a study archive for loading</para>
+                        <screenshot>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata align="center" width="500"
+                                        fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-select-file.png"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>
+                    </listitem>
+                    <listitem>
+                        <para>Click on load. BII-Data-Manager first validates the submission</para>
+                        <screenshot>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata align="center" width="500"
+                                        fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-validating.png"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>
+                        <para>then loads</para>
+                        <screenshot>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata align="center" width="500"
+                                        fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-loading.png"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>
+                        <para>By default, at the end of a successful loading, BII-Data_manager will
+                            prompt the security management screens.</para>
+                        <para>The function allows to grant permissions to access the newly loaded
+                            dataset by select among the users as well decided the keep the datasets
+                            private or public.</para>
+                        <screenshot>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata scale="40"
+                                        fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-mod-ownership.png"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>
+                        <para>Do pay attention to the 2 buttons next to each other:</para>
+                        <screenshot>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata scale="30"
+                                        fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-mod-privacy.png"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>
+                        <screenshot>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata scale="30"
+                                        fileref="https://github.com/ISA-tools/ISAvalidator-ISAconverter-BIImanager/blob/master/val_conv_manager_gui/src/main/resources/images/DataManager/set_permission_button.png?raw=true"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>
+                        <screenshot>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata align="center" width="500"
+                                        fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-permissions-2.png"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>
+                        <screenshot>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata align="center" width="500"
+                                        fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-permissions-3.png"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>
+                    </listitem>
+                    <listitem>
+                        <para>Once the permissions have been set, BII-Data-Manager will signal
+                            loading success with the following screen</para>
+                        <screenshot>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata align="center" width="500"
+                                        fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-load-success.png"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>
+                    </listitem>
+                </orderedlist>
+            </para>
+        </sect2>
+        <sect2>
+            <title>Data Unloader Function</title>
+            <para> In order to remove datasets from the BII database, go back to main menu of the
+                BII-Data-Manager </para>
+            <para> and hit the top middle button: <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata scale="10"
+                                fileref="https://github.com/ISA-tools/ISAvalidator-ISAconverter-BIImanager/blob/master/val_conv_manager_gui/src/main/resources/images/DataManager/unload_study.png?raw=true"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>BII-Data-Manager will then query the database and return a list of its content so
+                users can select which study or studies should be unload. One or more studies may be
+                selected at any one time. <note>
+                    <para>Known issues: During the first selection, the button not operate. Click
+                        away, for example by trying to select another study and then click back to
+                        select the study again. This issue will be addressed in the coming release
+                        and is currently tracked under feature request #68 under
+                        github/BII-data-manager.</para>
+                </note>
+            </para>
+            <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata align="center" width="500"
+                            fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-listing-studies.png"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot>
+            <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata align="center" width="500"
+                            fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-listed-studies.png"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot>
+            <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata align="center" width="500"
+                            fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-study-selected for unload.png"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot>
+        </sect2>
+        <sect2>
+            <title>Indexing Function</title>
+            <para> Indices may become corrupted. It is therefore necessary to be able to regenerate
+                the lucene index to ensure accurate searches and display of the database content </para>
+            <para> BII-Data-Manager provides such functionality, available by clicking the following
+                button: <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata scale="10"
+                                fileref="https://github.com/ISA-tools/ISAvalidator-ISAconverter-BIImanager/blob/master/val_conv_manager_gui/src/main/resources/images/DataManager/reindex_menu_item_over.png?raw=true"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>Simply hit the button to trigger reindexing of the BII database content.</para>
+            <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata align="center" width="500"
+                            fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-reindexing.png"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot>
+            <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata align="center" width="500"
+                            fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-reindexing-success.png"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot>
+            <para>Index creation failure will be notified by the following icon.</para>
+            <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata scale="40"
+                            fileref="https://github.com/ISA-tools/ISAvalidator-ISAconverter-BIImanager/blob/master/val_conv_manager_gui/src/main/resources/images/DataManager/index_creation_failed.png?raw=true"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot>
+            <para>If index creation fails, trying running the process again. If this fails again,
+                try unloading the study last loaded and reindex.</para>
+        </sect2>
+        <sect2>
+            <title> Security and Ownership management </title>
+            <para>As seen previously, the security page is automatically accessed following a
+                successful loading. However, it is possible to modify at any time the ownership and
+                access rights of any study persisted to BII database by calling dedicated function
+                in the BII-Data-Manager.</para>
+            <para>To do so, hit the button:<screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata scale="10"
+                            fileref="https://github.com/ISA-tools/ISAvalidator-ISAconverter-BIImanager/blob/master/val_conv_manager_gui/src/main/resources/images/DataManager/security_menu.png?raw=true"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot>
+            </para>
+            <para>In order to display the following page:</para>
+            <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata scale="10"
+                            fileref="https://github.com/ISA-tools/ISAvalidator-ISAconverter-BIImanager/blob/master/val_conv_manager_gui/src/main/resources/images/DataManager/security_menu.png?raw=true"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot>
+        </sect2>
+        <sect2>
+            <title> Exporting ISA-Tab file from BII Database </title>
+            <para/>
+        </sect2>
+    </sect1>
+</chapter>

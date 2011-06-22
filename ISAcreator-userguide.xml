@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" type="xml"?>
+<chapter id="isacreator" chunked="0" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.0">
+    <info> 
+        <title>ISAcreator User Manual</title>
+<!--<author>
+<orgname>ISA Team</orgname>
+<address>
+<city>Oxford</city>
+<street>7 Keble Road</street>
+<postcode>OX1 3QG</postcode>
+<country>United Kingdom</country>
+</address>
+<email>isatools@googlegroups.com</email>
+</author>-->
+        <mediaobject>
+            <imageobject>
+                <imagedata scale="35"
+                    fileref="https://github.com/ISA-tools/ISAcreator/blob/master/src/main/resources/images/gui/isacreator_icon.png?raw=true"
+                    format="PNG"/>
+            </imageobject>
+        </mediaobject>
+        <releaseinfo>version 1.4</releaseinfo>
+        <pubdate>2011-06-22</pubdate>
+        <legalnotice>
+            <para>This documentation is produced under
+                <para>
+                    This documentation is distributed under           
+                    <screenshot>               
+                        <mediaobject>
+                            <imageobject>
+                                
+                                <imagedata scale="15" align="center"
+                                    fileref="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+                                    format="PNG"/>
+                                
+                            </imageobject>
+                        </mediaobject>                 
+                    </screenshot>
+                    <link xlink:href="http://creativecommons.org/licenses/by-sa/3.0/"> </link>
+                </para>
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata scale="50" align="center"
+                                fileref="../../git/ISAcreator/src/main/resources/images/effects/isacreator_logo.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+        </legalnotice>
+
+        
+    </info>
+<!--
+
+-->
+    
+    <sect1>
+        <title>Introduction</title>
+        <sect2>
+        <title>Why use ISAcreator?</title>
+        <itemizedlist>
+            <listitem><para>You are a lab scientist recording experimental information and need to meet annotation
+            requirements? </para></listitem>
+            <listitem><para>You are planning an experiment and would to organize you experimental records from the
+            start?</para></listitem>
+            <listitem><para>You need to deposit experimental data to public repositories to obtain accession
+            number for your manuscript?</para></listitem>
+        </itemizedlist>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Getting started</title>
+        <para> The following section will provide key information to help you deploy ISAcreator in
+            the best possible conditions</para>
+        <sect2>
+            <title>Requirements</title>
+            <para>Prior to install ISAcreator tool, irrespective of the operating system used, do
+                make sure that Java version 1.6 is deployed on the raget machine and that <code>JAVA_HOME</code>
+                environmental variable has been set.</para>
+            <para>To check which version of Java is currently available, open a terminal and type
+                the following command:</para>
+            <para>
+                <prompt>c:>java -version</prompt>
+            </para>
+            <para> The result should look like this: </para>
+            <para><prompt>java version "1.6.0_22" Java(TM) SE Runtime Environment (build
+                    1.6.0_22-b04-307-10M3261) Java HotSpot(TM) 64-Bit Server VM (build 17.1-b03-307,
+                    mixed mode) </prompt>
+            </para>
+        </sect2>
+        <sect2>
+            <title>Getting the software</title>
+            <para>ISAcreator latest build is available <link xlink:href="https://github.com/downloads/ISA-tools/ISAcreator/ISAcreator-1.4.Final-all.zip"
+                    >here</link> in its cross platform form</para>
+            <para>For <trademark>Mac</trademark> users, we also provide a dedicated version
+                available <link xlink:href="https://github.com/downloads/ISA-tools/ISAcreator/ISAcreator-1.4.Final-all.zip">here</link>
+            </para>
+        </sect2>
+        <sect2>
+            <title>Installing the latest build version</title>
+            <para>We now detail how to install and run ISAcreator after having downloaded the
+                compressed archive from isatab.sf.net download page or from our github
+                repository.</para>
+            
+                <sect3>
+                    <title>Decompressing the archive</title>
+                    <para>
+                        <warning>
+                            <para>For <trademark>Windows 7</trademark> users, do ensure that the
+                            archive is properly unpacked. Windows 7 explorer seems to allow viewing
+                            the content of an archive, even starting a jar application upon double
+                            clicking when the application is still compressed. Doing so will result
+                            in an failing to use ISAcreator properly. Freeware such as
+                                <trademark>7-zip</trademark> provides an easy means to ensure zip
+                                archive have been properly expanded.
+                            </para>
+                        </warning>
+                    </para>
+                </sect3>
+
+                <sect3>
+                    <title>Starting ISAcreator by double-clicking</title>
+                    <para>Provided the requirements described in section 1 have been met, ISAcreator
+                        software can be started by simply double clicking the ISAcreator-1.4.jar
+                        file</para>
+                </sect3>
+                <sect3>
+                    <title>Starting ISAcreator from the command line</title>
+                    <para>More advanced users may want to use the command line to pass additional
+                        configuration parameters to the tool at start up. In particular, users
+                        manipulating large datasets may want/need to allocate more memory. To do so,
+                        proceed as follows:</para>
+                        <orderedlist>
+                            <listitem><para>open a terminal</para></listitem>
+                            <listitem><para>navigate to ISAcreator installation folder</para>
+                                <para> <prompt>c:>cd /Users/JohnSmith/ISAcreator-1.4/</prompt></para>
+                                <para>Windows OS users, use "\" instead.</para>
+                            </listitem>
+                            <listitem><para>issue the following command:</para> 
+                              <para><prompt>c:>java -jar -Xms256m -Xmx1024m ISAcreator-1.4.jar</prompt></para>
+                                <para>Watch out for placing spaces correctly and remember that arguments are case sensitive. <code>Xms</code> and <code>Xmx</code> parameters
+                                   allow to set the minimal and maximal amount of memory available to the java virtual machine (jvm) used by ISAcreator.</para>
+                            </listitem>
+                            <listitem><para> the tool will start with this splashscreen
+                                <screenshot>
+                                    <mediaobject>
+                                        <imageobject>
+                                            <!-- width="300" -->
+                                            <imagedata align="center" scalefit="1" width="85%" 
+                                                fileref="https://github.com/ISA-tools/ISAcreator/blob/master/src/main/resources/images/gui/splashscreen.gif?raw=true"
+                                    format="GIF"/>     
+                                        </imageobject>
+                                    </mediaobject>
+                                </screenshot>
+                                followed by the initial ISAcreator screen prompting for an ISAconfiguration to be selected.</para>
+                            <para>
+                                <screenshot>
+                                    <mediaobject>
+                                        <imageobject>
+                                            <!-- width="500" -->
+                                            <imagedata align="center" scalefit="1" width="85%" 
+                                fileref="./isacreator_images/ISAcreator_LoadConfiguration_page_2011-06-22.png"
+                                format="PNG"/>
+                                        </imageobject>
+                                    </mediaobject>
+                                </screenshot>
+                            </para>
+                            </listitem>
+                        </orderedlist>
+                            <para> If you see those screen, you have successfully installed ISAcreator on your machine.
+                                For a more thourough description of the tool and its functionalities, please refer to the following chapters.
+                            </para>
+                </sect3>            
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Creating a User Account</title>
+        <para>To create an account, click on  
+            <mediaobject>
+                <imageobject>
+            <imagedata scale="30"
+                fileref="./isacreator_images/ISAcreator_create_profile_button_2011-02-22.png"
+                format="PNG"/>  
+                </imageobject>
+            </mediaobject>button to the bring the following screen:
+        </para>
+            <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata align="center" width="500"
+                            fileref="./isacreator_images/ISAcreator_login_registration_page_2011-02-22.png"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot>
+            <para>and input the necessary information.</para>
+            <note><para>The information supplied in the field "institution" is used by ISAcreator Wizard component in conjunction with the ISA-default configuration that ships with the tools.
+                Please refer to section <link xlink:href="">ISAcreator Wizard</link> and ISAconfigurator Document for in depth explanation on how.</para></note>
+        
+        <sect2><title>Why do i need to register and create an account?</title>
+        <para>Registering with ISAcreator is very quick and simple. The main reason for bothering users with registration details is to be able to allow ISAcreator to
+            learn from new users. When using ISAcreator and annotating experiments, ISAcreator remembers the history of selection for a particular user profile. So the next time that user comes around, there will be no need to type in the same information again.
+            It is there, available. Note that ISAcreator currently does not encrypt information, even though technically, it is fairly simple to do so.</para>    
+        </sect2>
+    </sect1>
+    <sect1>
+       <title>Setting Proxy Parameters in ISAcreator</title>
+            <para>To do so, click the <mediaobject><imageobject><imagedata scale="30"
+                fileref="./isacreator_images/ISAcreator_settings_button.png"
+                format="PNG"/></imageobject></mediaobject> button from the Main Menu page, and select the first item "http proxy"</para>
+            <para>The action will display the following screen:</para>
+            <para> 
+                <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata align="center" width="500"
+                            fileref="./isacreator_images/ISAcreator_Proxy_page.png"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot></para>
+            <para>Use the tick boxes provided to supply the necessary information. Note that the lower tick box can only be activated if the upper one has been selected.</para>       
+    </sect1>
+    <sect1>
+        <!-- <title>Can I customize where ISAcreator looks for files by default?</title>
+        <para>This section shows you round a number of features that makes it easier to use ISAcreator </para>
+        <para>The page provides the ability to specify:</para>
+        <para><orderedlist>
+            <listitem><para>The full path to the user profiles.</para></listitem>
+            <listitem><para>The full path to the folder holding the ISAconfigurations.</para></listitem>
+            <listitem><para>The full path to the location where the user wishes to keep all experimental information recorded using ISAcreator. Note that this will become the default location where ISAcreator 
+                will save ISA-Tab structured information.</para></listitem>
+        </orderedlist>
+        </para>
+        <para>So, you are all set! We can now show you round key features, functions and things you can do with ISAcreator and that no other tool currently provides.</para>-->
+            <title>Setting default locations for ISAconfigurations and ISA datasets?</title>
+            <para>To do so, click the <mediaobject><imageobject><imagedata scale="30"
+                fileref="./isacreator_images/ISAcreator_settings_button.png"
+                format="PNG"/></imageobject></mediaobject> button from the Main Menu page</para>
+            <para>The action will display the following screen:</para>
+            <para>
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="500"
+                                fileref="./isacreator_images/ISAcreator_SettingLocationConfig_page.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot></para>
+
+    </sect1>
+    
+    <sect1>
+        <title>Using ISAcreator</title>
+        <para> Following successfull login, users will be presented with ISAcreator Main Menu
+            <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata align="center" width="500"
+                            fileref="./isacreator_images/ISAcreator_MainMenu_page.png"
+                            format="PNG"/>     
+                    </imageobject>
+                </mediaobject>
+            </screenshot>
+        </para>
+        <para> The menu items are self explanatory.</para>
+    <orderedlist>
+        <listitem><para>The first item allows to create a new study report from scratch </para></listitem>
+        <listitem><para>The second item allows to view an existing report either for addition and simply for browsing</para></listitem>
+        <listitem><para>The third item allows users to groups studies into investigations</para></listitem>
+    </orderedlist>
+        <para>However, before going in details in those key elements, we will focus on the next 2 menu items. </para>
+        <para>The reason for this?</para>
+        <para>Those 2 choices enable users to further customize ISAcreator installations. So let's review what those items can do for you by answering the following 2 questions!</para>
+        
+        <sect2>
+            <title>Why does ISAcreator require an ISA configuration to run?</title>
+             <para>Different communities have different needs. So ISAconfigurations should be considered as 'skins' for ISAcreator.
+            ISAconfigurations allow users to set annotation requirements, determine which terminologies and which controled vocabularies should be used, provide contextual help about the various fields, decide if a field is required or not and can accept a data file or not.
+            If you are working on Drosophila, you probably don't need to see Mouse anatomy terms when looking for resources. ISAconfigurations allows to just do that.
+            For more information about how to create configurations, please refer to ISAconfigurator user manual</para>
+            <para>Therefore, ISAcreator allows you to swap configurations depending on the study you need to report. And the good thing is that you don't need to restart the application.
+                Just save the current study you may be working on, go to the main menu and select the , click on  
+                <mediaobject><imageobject><imagedata scale="40"
+                    fileref="./isacreator_images/ISAcreator_loadotherconfig_button.png"
+                    format="PNG"/></imageobject></mediaobject>  Menu Item</para>
+        
+        <para>The action will bring the configuration selection screen</para>
+        <para>
+            <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata align="center" width="500"
+                            fileref="./isacreator_images/ISAcreator_LoadConfiguration_page_2011-06-22.png"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot>
+        </para>
+        </sect2>
+    </sect1> 
+    <sect1>
+        <title>Getting familiar with ISAcreator user interface</title>
+        <para>ISAcreator is a piece of software developed around the ISA-TAB format, a spreadsheet based format meant to provide the necessary elements 
+        for describing the experiments, in which protocols and instruments are used to generate images, matrices of measurement points used to monitor a biological system
+        nder study, possibly following a stimulus or some kind of stress. So the main thing is that you are no longer limited to one type of technology. If the same tissue fragment 
+        is used to gather biological signal with different techniques, you can use ISAcreator to record all those steps.</para>
+        <para>Spreadsheets are widely used in biology to track information, we have just leveraged the layout and added specific features to make annotation more effective.
+            For instance, <orderedlist>
+                <listitem><para>a built in text editor, useful when describing protocols or overall study description</para></listitem>
+                <listitem><para>an ontology widget, which allows to scan resources from NCBO Bioportal or EBI's Ontology Lookup service</para></listitem>
+                <listitem><para>a term tagging service. Yes, we realized that the ontology widget was good for selection, but sometimes it is just nice to be able to 
+                type free text. That's ok but so much when maintaining archives and databases. </para></listitem>
+                <listitem><para>a bibliographic service, which fetches information from Pubmed by simply providing a pubmed identifier</para></listitem>
+                <listitem><para>a spreadsheet mapping tool to import legacy data already organized in Excel files for instance</para></listitem>
+                <listitem><para>a wizard to create templates from information about the study factors and their levels</para></listitem>
+                <listitem><para>a plugin architecture which allows to extend ISAcreator capabilities. We showcase this function with a plugin to generate QR codes from sample information</para></listitem>
+            </orderedlist>
+        </para>
+    <sect2>
+        <title>Creating a Study manually</title>
+        <para>To do so, from the Main Menu page, select the 
+            <mediaobject><imageobject><imagedata scale="40"
+                fileref="./isacreator_images/ISAcreator_create_new_exp_button.png"
+                format="PNG"/></imageobject></mediaobject>
+            . This will show the following screen offering 3 options</para>
+        <para>
+            <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata align="center" width="500"
+                            fileref="./isacreator_images/ISAcreator-CreateStudyMenu_page.png"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot>
+        </para>
+        <para>From this new page, select the  <mediaobject><imageobject><imagedata scale="30"
+            fileref="./isacreator_images/ISAcreator_create_manually_button.png"
+            format="PNG"/></imageobject></mediaobject> button.</para>
+        <para>The action brings you to the empty study view, which is the top level element of ISAcreator environment.</para>
+        <screenshot>
+            <mediaobject>
+                <imageobject>
+                    <imagedata align="center" width="600"
+                        fileref="./isacreator_images/ISAcreator_CreateManual_page.png"
+                        format="PNG"/>
+                </imageobject>
+            </mediaobject>
+        </screenshot>
+        <para>As you can see, the center page contains summary information to help you starting your submission. Before going further, let's pay attention to the layout of page and identify 4 elements</para>
+        <orderedlist>
+            <listitem><para>A menu bar sitting on top of the window, just like any other desktop application.</para></listitem>
+            <listitem><para>A tree-view pane: this is where you will be able to see the list of spreadsheet related to samples and assay information.</para></listitem>
+            <listitem><para>An information box: in the lower left hand part of the windows, the area will be used to display annotation metadata, such as term identifier and term definitions.</para></listitem>
+            <listitem><para>A central pane: it makes most of the window real estate and as we will show, is where tables are presented for the users to enter information.</para></listitem>
+        </orderedlist>
+        
+        <sect3>
+            <title>ISAcreator Menu bar</title>
+            <para>If you are familiar with desktop application, ISAcreator will feel totally comfortable frome the start thanks to the standard layout. Let's review the different menu lists available first.</para>
+            <orderedlist>
+                <listitem><para>File Menu</para>
+                     <para>Mousing over the File Menu and clicking it displays the full list of options for that entry:</para>
+                     <para>
+                         <mediaobject><imageobject> <imagedata scale="50"
+                                     fileref="./isacreator_images/ISAcreator-FileMenu-menu.png"
+                                     format="PNG"/></imageobject></mediaobject>
+                     </para>
+                    <para>As you can see, the full complement of classic save functions are there as well option to navigate back to the Main Menu page or leaving the application. 
+                    Also note that keyboard shortcuts are also available</para>
+                </listitem>
+                <listitem>
+                    <para>Study Menu</para>
+                    <para>Mousing over the File Menu and clicking it displays the full list of options for that entry:</para>
+                    <para>
+                        <mediaobject><imageobject> <imagedata scale="30"
+                                    fileref="./isacreator_images/ISAcreator_StudyMenu-menu.png"
+                                    format="PNG"/></imageobject></mediaobject>
+                    </para>
+                    <para>Simple actions to add or remove studies.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>View Menu</para>
+                    <para>Simple point and click actions for resizing ISAcreator application window:</para>
+                    <para>
+                        <mediaobject><imageobject><imagedata scale="40"
+                                    fileref="./isacreator_images/ISAcreator-ViewMenu-menu.png"
+                                    format="PNG"/></imageobject></mediaobject>
+                    </para>
+                    <para>Keyboard shortcuts are available.</para>
+                </listitem>
+                <listitem>
+                   <para>Utilities Menu</para>
+                   <para>This menu enables calls to ISA plugins to be made. More on this in section  ****CHANGEME****</para>
+                </listitem>
+                <listitem>
+                    <para>Help Menu</para>
+                    <para>
+                        <mediaobject><imageobject>  <imagedata scale="35"
+                                    fileref="./isacreator_images/ISAcreator-HelpMenu-menu.png"
+                                    format="PNG"/></imageobject></mediaobject>
+                     </para>
+                     <para>In case you need additional information on how to use the tool or send feedback and contact the developer team.</para>
+                </listitem>
+            </orderedlist>
+        </sect3>
+        <sect3>
+            <title>Adding a New Study:</title>
+            <para>To add a new study, go the Study and click the
+                <mediaobject><imageobject> <imagedata 
+                    scale="30" 
+                    fileref="./isacreator_images/ISAcreator-FileMenu-AddStudy-button.png"
+                    format="PNG"/></imageobject></mediaobject>
+            </para>
+            <para>Fill in the name of the study to be created and click the add button in the lower end of the sliding window:</para>
+            <para> 
+                <mediaobject><imageobject><imagedata 
+                scale="40" 
+                fileref="./isacreator_images/ISAcreator-addstudy-window2.png"
+                format="PNG"/></imageobject></mediaobject>
+            </para>
+            <para>You have now entered the Study Overview page. The view in the central pane is divided in 6 sections we are going to review. The upper left pane has changed to display a tree view whose top node is the name of the study,
+            and the child is a link to the Study Sample spreadsheet</para>
+            <sect4>
+                <title>Study Description Section</title> 
+                <para></para>
+                <sect5><title>Dedicated Text Editor</title>
+                    <para>
+                        <screenshot>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata align="center" width="400"
+                                        fileref="./isacreator_images/ISAcreator_TextEditor_widget.png"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>
+                    </para>
+                </sect5> 
+                <sect5><title>Build-in Calendar</title>
+                    <para>
+                        <screenshot>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata align="center" width="200"
+                                        fileref="./isacreator_images/ISAcreator_Calendar_widget.png"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>
+                    </para>
+                </sect5>
+            </sect4>
+            <sect4>
+                <title>Study Design Descriptors section</title> 
+                <para> NOTE: user interface may be simplified and this section removed entirely</para>
+            </sect4>
+            <sect4>
+                <title>Study publications section</title> 
+                <para></para>
+                <sect5><title>Publication Fetcher</title>
+                    <para>
+                        <screenshot>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata align="center" width="500"
+                                        fileref="./isacreator_images/ISAcreator_Publication_widget.png"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>                       
+                        <screenshot>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata align="center" width="500"
+                                        fileref="./isacreator_images/ISAcreator_Publication_widget_results.png"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>                       
+                        <screenshot>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata align="center" width="500"
+                                        fileref="./isacreator_images/ISAcreator_Publication+Editor_inplace_screenshot.png"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>                      
+                    </para>
+                </sect5>
+            </sect4>
+            <sect4>
+                <title>Study factors section</title> 
+                <para>Note: Factor Type will disappear form user interfaces as deemed too confusing</para>
+            </sect4>
+            <sect4>
+                <title>Study assays section</title> 
+                <para>NOTE: user interface may be simplified and this section removed entirely, replaced by a menu action</para>
+            </sect4>
+            <sect4>
+                <title>Study protocols section</title> 
+                <para></para>
+            </sect4>
+            <sect4>
+                <title>Study contacts section</title> 
+                <para></para>
+            </sect4>
+            <sect4>
+                <title>Study fundings section</title> 
+                <para></para>
+            </sect4>             
+        </sect3>
+        <sect3>
+            <title>The spreadsheet view and its functionalities</title>
+            <para>Spreadsheet tool bar and menu buttons</para>
+            <para>    
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata scale="70"
+                                fileref="./isacreator_images/ISAcreator-spreadsheet-toolbar.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            
+            <sect4><title>Adding Rows</title>
+                <para><screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata scale="40"
+                                fileref="./isacreator_images/ISAcreator-spreadsheet-view-add-row-widget.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot></para>
+                <para><screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-spreadsheet-view-add-row-2.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot></para>
+            </sect4>
+            <sect4><title>Adding or removing fields</title>
+                <para>
+                    <screenshot>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata align="center" width="700"
+                                    fileref="./isacreator_images/ISAcreator-spreadsheet-view-add-column.png"
+                                    format="PNG"/>
+                            </imageobject>
+                        </mediaobject>
+                    </screenshot>
+                </para>
+            </sect4>
+            <sect4><title>Sorting on single fields</title><para></para></sect4>
+            <sect4><title>Sorting on multiple fields</title>
+                <para>
+                    <screenshot>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata align="center" width="700"
+                                    fileref="./isacreator_images/ISAcreator-spreadsheet-view-multiple-sort-widget.png"
+                                    format="PNG"/>
+                            </imageobject>
+                        </mediaobject>
+                    </screenshot>               
+                </para>
+            </sect4>
+            <sect4><title>Propagating information within a field</title><para></para></sect4>
+            <sect4><title>Propagating information to all rows</title><para></para></sect4>
+
+            <sect4><title>The Transposed View</title>
+                <para>Sometimes, it is just easier to display records as columns, especially when many descriptors are recorded. Therefore, ISacreator provide a transposed view. 
+                    This function can triggered throught this activation button:
+                    <screenshot>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata scale="25"
+                                    fileref="./isacreator_images/ISAcreator-transposed-view-Button.png"
+                                    format="PNG"/>
+                            </imageobject>
+                        </mediaobject>
+                    </screenshot>
+                </para>  
+                
+                <para>
+                    <screenshot>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata align="center" width="700"
+                                    fileref="./isacreator_images/ISAcreator-transposedview-details-page.png"
+                                    format="PNG"/>
+                            </imageobject>
+                        </mediaobject>
+                    </screenshot>
+                </para>
+                
+            </sect4>
+            
+            <sect4><title>Property Highlighting in Transposed View</title>
+                <para>Visual cues are often important help to home in on specific information. The Transposed view provides toggle highlight buttons to do so:</para>
+                 <para> To activate:
+                     <screenshot>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata scale="30"
+                                    fileref="./isacreator_images/ISAcreator-transposed-view-highlightOff-button.png"
+                                    format="PNG"/>
+                            </imageobject>
+                        </mediaobject>
+                 </screenshot>
+                 </para>
+                 <para>To deactivate:              
+                    <screenshot>
+
+                                  
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata scale="15"
+                                    fileref="./isacreator_images/ISAcreator-transposed-view-highlightOn-button.png"
+                                    format="PNG"/>
+                            </imageobject>
+                        </mediaobject>
+                    </screenshot>
+                </para>  
+
+                <para>
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-transposed-view-highlighting-view.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+                </para>
+            </sect4>
+            <sect4><title>Navigating to a record in Transposed View</title><para></para>
+                <para>Scrolling to a particular record can be cumbersome, especially when large sets of records are handled. Therefore, a quick and straightforward to use navigation tool is available, allowing jumping to a particular record:
+                    <screenshot>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata scale="35"
+                                    fileref="./isacreator_images/ISAcreator-transposed-view-Gotorecord-button.png"
+                                    format="PNG"/>
+                            </imageobject>
+                        </mediaobject>
+                    </screenshot>
+                </para></sect4>
+            <sect4><title>Adding records</title><para></para></sect4>
+            <sect4><title>Contextual Menus in Spreadsheet view</title>
+                <sect5><title>Autoincrement function</title>
+                    <para>
+                    <screenshot>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata align="center" width="300"
+                                    fileref="./isacreator_images/ISAcreator-spreadsheet-autofill-function-1.png"
+                                    format="PNG"/>
+                            </imageobject>
+                        </mediaobject>
+                    </screenshot>
+
+                        <screenshot>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata align="center" width="300"
+                                        fileref="./isacreator_images/ISAcreator-spreadsheet-autofill-function-2.png"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>
+
+                        <screenshot>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata align="center" width="300"
+                                        fileref="./isacreator_images/ISAcreator-spreadsheet-autofill-function-3.png"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>
+
+                        <screenshot>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata align="center" width="300"
+                                        fileref="./isacreator_images/ISAcreator-spreadsheet-autofill-function-4.png"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>
+                    </para>
+                </sect5>
+                <sect5><title>File Name resolution function</title><para>
+                    <screenshot>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata scale="35"
+                                    fileref="./isacreator_images/ISAcreator-transposed-view-Gotorecord-button.png"
+                                    format="PNG"/>
+                            </imageobject>
+                        </mediaobject>
+                    </screenshot>
+                </para></sect5>
+            </sect4>
+            <sect4><title>Redo/Undo Function</title><para>
+                <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata scale="15"
+                            fileref="./isacreator_images/ISAcreator-Undo-Redo-button.png"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot></para></sect4>
+        </sect3>
+        
+    </sect2>        
+    </sect1> 
+    <sect1>
+    <title>Visualization Functions in ISACreator</title>
+    <sect2>
+    <title>Spreadsheet Highlighting of groups</title>
+        <para>The function has been developed to provide visual cues when annotating large experiments. Any element may be used for grouping but we are showing how highlighting on treatment groups can be particularly useful.
+            In order to activate the contextual menu, right click on a cell to display the menu. Then, navigate to the <code>Highlight groups</code> menu item and pick the relevant elements.
+            <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata align="center" width="700"
+                            fileref="./isacreator_images/ISAcreator-spreadsheet-view-group-highlight-factor.png"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot></para>                    
+        <para>
+            <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata align="center" width="700"
+                            fileref="./isacreator_images/ISAcreator-spreadsheet-view-group-highlight.png"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot></para>
+    </sect2>
+    <sect2>
+        <title>Graphical Representation of Treatment Groups</title>
+        <para>The function has been developed to provide visual cues when annotating large experiments. Any element may be used for grouping but we are showing how highlighting on treatment groups can be particularly useful.
+            In order to activate the contextual menu, right click on a cell to display the menu. Then, navigate to the <code>Overview</code> button to display the following.
+            <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata align="center" width="700"
+                            fileref="./isacreator_images/ISAcreator-study-overview-widget.png"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot></para>                    
+        <para>Then, select an type of assay in the graph, e.g DNA microarray, and click 
+            <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata align="center" width="700"
+                            fileref="./isacreator_images/ISAcreator-study-overview-widget-group1.png"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot></para>
+        <para>
+            <screenshot>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata align="center" width="700"
+                            fileref="./isacreator_images/ISAcreator-study-overview-widget-group2.png"
+                            format="PNG"/>
+                    </imageobject>
+                </mediaobject>
+            </screenshot></para>
+        <para>Thanks to this function, it is easy to identify imbalances in treatment groups and produce users a graphical intuition of the overall experimental design.</para>
+    </sect2>
+    </sect1>    
+    
+    <sect1>
+        <title>Advanced Features</title>
+        <sect2>
+            <title>Experimental Design Wizard: Supporting Intervention Study Design</title>
+            <para>The function has been developed take advantage of the experimental design to generate quickly annotation templates. This function, which is being augmented to support more advanced designs, currently makes the following assumptions:
+                <itemizedlist>
+                    <listitem><para>The study should be a intervention study, where different treatments are applied to a biological system and effects are recorded using one or several techniques</para></listitem>
+                    <listitem><para>The study is carried out according to a factorial design and all subjects can only be present in one study group in a study (parallel group design)</para></listitem>
+                    <listitem><para>The sample collection events occur once. (Note that this is being currently modified to allow several sampling event of the same sample to occur over the course of the study)</para></listitem>
+                </itemizedlist>
+            </para>
+            <para>The first screen of the Experimental Design Wizard asks for a textual description of the study as well as a more formal description where users should report study factor (also known as, study independent variables) with their corresponding qualitative levels.
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-study-wizard-1.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>                    
+            <para>The following screenshot shows the first screen with all necessary information filled in.
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-study-wizard-2.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>Clicking on the <code>Next</code> button leads to the <code>Factor Groups</code> screen which summarizes all the treatment groups which have been computed by the wizard based on the declared factors and associated levels.
+             
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-study-wizard-3.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>In case, the study design is unbalanced (i.e. not all possible computed treatment groups are used), it is possible to select which treatment groups should be kepts and adjust the actual number of subjects present in each group.
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-study-wizard-4.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>Once this is done, clicking on the <code>Next</code> button takes users to a new screen meant to allow reporting of Assays being performed as well as describing the sample collections events and types. Depending on the type of assays, specific
+                information may be supplied. In particular, it is possible to specify which microarray design were used and if pooling or dye swap has been performed.
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-study-wizard-6.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>Finally, a review step is included, relying on the graphical component described earlier. In case of error, it is possible to go back and alter information.
+                <warning><para>ISACreator Wizard currently does not cache user input. Going back in the wizard means information is lost and will have to be reentered.</para></warning>
+                <note><para>This limitation will be addressed in future releases.</para></note>
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-study-wizard-7.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+           <!-- <para>
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-study-wizard-factorlevels-8.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>-->
+        </sect2>
+        <sect2>
+            <title>Dealing with legacy data: Importing Spreadsheet and ISACreator Mapping Tool</title>
+            <para>The function has been developed to provide support to users and data managers. Any element may be used for grouping but we are showing how highlighting on treatment groups can be particularly useful.
+                In order to activate the contextual menu, right click on a cell to display the menu. Then, navigate to the <code>Overview</code> button to display the following.
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-mapper-startmapping.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>                    
+            <para>Then, select an type of assay in the graph, e.g DNA microarray, and click 
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-mapper-usewithpreviousmapping.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-mapper-assayselect.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-mapper-samplemapping.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="400"
+                                fileref="./isacreator_images/ISAcreator-mapper-composing-elements.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>             
+            <para>
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="500"
+                                fileref="./isacreator_images/ISAcreator-mapper-columnselector-empty.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>            
+            <para>
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="200"
+                                fileref="./isacreator_images/ISAcreator-mapper-adding-fields.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-mapper-sampleoverview.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-mapper-assaymapping-1.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-mapper-assayoverview.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para> 
+            <para>
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-mapper-savemapping-1.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-mapper-savemapping-2.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>            
+            <para>Thanks to this function, it is easy to identify imbalances in treatment groups and produce users a graphical intuition of the overall experimental design.</para>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Plugin Architecture</title>
+        <sect2>
+            <title>QRCode Creation Plugin</title>
+            <para>The QRCode function has been developed to offer sample tracking capability. Ideally, the function could be used in combination with the Experimental Design wizard for planning experiments.</para>
+            <para>To call the function, go to <code>utilities</code>, then select <code>Sample Tracking</code>, then select <code>generate QR codes for Study Samples</code>.</para>
+            <para>As shown below, select the Study to be used. In our example, 2 studies are listed.
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-plugin-QRcode-1.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>                    
+            <para>The action opens the following screen. Click the <guibutton>qrbuilder</guibutton> button.
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-plugin-QRcode-2.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>The function reuses components already seen in the mapping function which allows to create a combination of information coming from fields in the study or assay spreadsheets with literals to form meaningful identifiers.
+                The QRcode function allows up to 1024 character string to be coded.
+                
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-plugin-QRcode-3.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-plugin-QRcode-4.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>Once this is done, Click on <guibutton>savecodes</guibutton> and choose a location on the filesystem to store the output of the function.
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-plugin-QRcode-5.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>Once done with the selection of the fields to be used for creating the QRCode, it is possible to save and export those so they can be used to perform sample or tube tracking tasks.
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="500"
+                                fileref="./isacreator_images/ISAcreator-plugin-QRcode-6.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>The output of the QRcode function contains an html page which summarizes the experimental and sample information used to form the label. The html report links back to each QRcode, as can be seen below.
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-plugin-QRcode-7.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>            
+        </sect2>
+ 
+
+        <sect2>
+            <title>Annotator Service</title>
+            <para>Sometimes, it is just faster to enter free text. However, it is always better to have some kind of semantic anchoring. To allow just that, we have teamed up with NCBO Bioportal team to provide a tagging facility embedded in ISACreator.</para>
+            <para>To call the function, go to <code>utilities</code>, then select <code>Autotagging (beta)</code>.</para>
+                    
+            <para>The action opens the following screen.
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-Term-Tagger-1.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para> update caption
+                
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-Term-Tagger-2.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-Term-Tagger-3.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>Once this is done, Click on <guibutton>savecodes</guibutton> and choose a location on the filesystem to store the output of the function.
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-Term-Tagger-4.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>update caption.
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="500"
+                                fileref="./isacreator_images/ISAcreator-Term-Tagger-5.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>
+            <para>Once happy with the terms you wish to annotate your experiment with, click OK. The Service will now update all the records and save both Ontology source and identifiers.
+                <screenshot>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata align="center" width="700"
+                                fileref="./isacreator_images/ISAcreator-Term-Tagger-6.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </para>            
+        </sect2>
+
+
+    </sect1>
+    
+  
+       
+        
+    
+</chapter>
