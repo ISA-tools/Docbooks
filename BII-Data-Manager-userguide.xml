@@ -90,7 +90,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata align="center" width="500"
-                                    fileref="./biidatamanager_doc/biidatamanager_images/BII-Manager-Select-Config.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_doc/biidatamanager_images/BII-Manager-Select-Config.png"
                                     format="PNG"/>
                             </imageobject>
                         </mediaobject>
@@ -112,7 +112,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata align="center" width="200"
-                                    fileref="./biidatamanager_doc/biidatamanager_images/BII-Data-Manager-create-account.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_doc/biidatamanager_images/BII-Data-Manager-create-account.png"
                                     format="PNG"/>
                             </imageobject>
                         </mediaobject>
@@ -123,7 +123,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata align="center" width="200"
-                                    fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-account-created.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_doc/biidatamanager_images/BII-data-manager-account-created.png"
                                     format="PNG"/>
                             </imageobject>
                         </mediaobject>
@@ -153,7 +153,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="500"
-                                fileref="./biidatamanager_doc/biidatamanager_images/BII-Manager_MainMenu_page.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_doc/biidatamanager_images/BII-Manager_MainMenu_page.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -177,7 +177,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="center" width="500"
-                                        fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-select-file.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_doc/biidatamanager_images/BII-data-manager-select-file.png"
                                         format="PNG"/>
                                 </imageobject>
                             </mediaobject>
@@ -189,7 +189,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="center" width="500"
-                                        fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-validating.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_doc/biidatamanager_images/BII-data-manager-validating.png"
                                         format="PNG"/>
                                 </imageobject>
                             </mediaobject>
@@ -199,7 +199,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="center" width="500"
-                                        fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-loading.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_doc/biidatamanager_images/BII-data-manager-loading.png"
                                         format="PNG"/>
                                 </imageobject>
                             </mediaobject>
@@ -213,7 +213,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata scale="40"
-                                        fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-mod-ownership.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_doc/biidatamanager_images/BII-data-manager-mod-ownership.png"
                                         format="PNG"/>
                                 </imageobject>
                             </mediaobject>
@@ -223,7 +223,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata scale="30"
-                                        fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-mod-privacy.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_doc/biidatamanager_images/BII-data-manager-mod-privacy.png"
                                         format="PNG"/>
                                 </imageobject>
                             </mediaobject>
@@ -241,7 +241,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="center" width="500"
-                                        fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-permissions-2.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_doc/biidatamanager_images/BII-data-manager-permissions-2.png"
                                         format="PNG"/>
                                 </imageobject>
                             </mediaobject>
@@ -250,7 +250,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="center" width="500"
-                                        fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-permissions-3.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_doc/biidatamanager_images/BII-data-manager-permissions-3.png"
                                         format="PNG"/>
                                 </imageobject>
                             </mediaobject>
@@ -263,7 +263,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="center" width="500"
-                                        fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-load-success.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_doc/biidatamanager_images/BII-data-manager-load-success.png"
                                         format="PNG"/>
                                 </imageobject>
                             </mediaobject>
@@ -300,7 +300,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="500"
-                            fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-listing-studies.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_doc/biidatamanager_images/BII-data-manager-listing-studies.png"
                             format="PNG"/>
                     </imageobject>
                 </mediaobject>
@@ -309,7 +309,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="500"
-                            fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-listed-studies.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_doc/biidatamanager_images/BII-data-manager-listed-studies.png"
                             format="PNG"/>
                     </imageobject>
                 </mediaobject>
@@ -318,7 +318,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="500"
-                            fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-study-selected for unload.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_doc/biidatamanager_images/BII-data-manager-study-selected for unload.png"
                             format="PNG"/>
                     </imageobject>
                 </mediaobject>
@@ -344,7 +344,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="500"
-                            fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-reindexing.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_doc/biidatamanager_images/BII-data-manager-reindexing.png"
                             format="PNG"/>
                     </imageobject>
                 </mediaobject>
@@ -353,7 +353,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="500"
-                            fileref="./biidatamanager_doc/biidatamanager_images/BII-data-manager-reindexing-success.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_doc/biidatamanager_images/BII-data-manager-reindexing-success.png"
                             format="PNG"/>
                     </imageobject>
                 </mediaobject>

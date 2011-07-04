@@ -163,7 +163,7 @@
                                         <imageobject>
                                             <!-- width="500" -->
                                             <imagedata align="center" scalefit="1" width="85%" 
-                                fileref="./isacreator_images/ISAcreator_LoadConfiguration_page_2011-06-22.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_LoadConfiguration_page_2011-06-22.png"
                                 format="PNG"/>
                                         </imageobject>
                                     </mediaobject>
@@ -183,7 +183,7 @@
             <mediaobject>
                 <imageobject>
             <imagedata scale="30"
-                fileref="./isacreator_images/ISAcreator_create_profile_button_2011-02-22.png"
+                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_create_profile_button_2011-02-22.png"
                 format="PNG"/>  
                 </imageobject>
             </mediaobject>button to the bring the following screen:
@@ -192,7 +192,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="500"
-                            fileref="./isacreator_images/ISAcreator_login_registration_page_2011-02-22.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_login_registration_page_2011-02-22.png"
                             format="PNG"/>
                     </imageobject>
                 </mediaobject>
@@ -210,7 +210,7 @@
     <sect1>
        <title>Setting Proxy Parameters in ISAcreator</title>
             <para>To do so, click the <mediaobject><imageobject><imagedata scale="30"
-                fileref="./isacreator_images/ISAcreator_settings_button.png"
+                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_settings_button.png"
                 format="PNG"/></imageobject></mediaobject> button from the Main Menu page, and select the first item "http proxy"</para>
             <para>The action will display the following screen:</para>
             <para> 
@@ -218,7 +218,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="500"
-                            fileref="./isacreator_images/ISAcreator_Proxy_page.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_Proxy_page.png"
                             format="PNG"/>
                     </imageobject>
                 </mediaobject>
@@ -239,7 +239,7 @@
         <para>So, you are all set! We can now show you round key features, functions and things you can do with ISAcreator and that no other tool currently provides.</para>-->
             <title>Setting default locations for ISAconfigurations and ISA datasets?</title>
             <para>To do so, click the <mediaobject><imageobject><imagedata scale="30"
-                fileref="./isacreator_images/ISAcreator_settings_button.png"
+                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_settings_button.png"
                 format="PNG"/></imageobject></mediaobject> button from the Main Menu page</para>
             <para>The action will display the following screen:</para>
             <para>
@@ -247,7 +247,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="500"
-                                fileref="./isacreator_images/ISAcreator_SettingLocationConfig_page.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_SettingLocationConfig_page.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -262,7 +262,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="500"
-                            fileref="./isacreator_images/ISAcreator_MainMenu_page.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_MainMenu_page.png"
                             format="PNG"/>     
                     </imageobject>
                 </mediaobject>
@@ -287,7 +287,7 @@
             <para>Therefore, ISAcreator allows you to swap configurations depending on the study you need to report. And the good thing is that you don't need to restart the application.
                 Just save the current study you may be working on, go to the main menu and select the , click on  
                 <mediaobject><imageobject><imagedata scale="40"
-                    fileref="./isacreator_images/ISAcreator_loadotherconfig_button.png"
+                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_loadotherconfig_button.png"
                     format="PNG"/></imageobject></mediaobject>  Menu Item</para>
         
         <para>The action will bring the configuration selection screen</para>
@@ -296,7 +296,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="500"
-                            fileref="./isacreator_images/ISAcreator_LoadConfiguration_page_2011-06-22.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_LoadConfiguration_page_2011-06-22.png"
                             format="PNG"/>
                     </imageobject>
                 </mediaobject>
@@ -326,7 +326,7 @@
         <title>Creating a Study manually</title>
         <para>To do so, from the Main Menu page, select the 
             <mediaobject><imageobject><imagedata scale="40"
-                fileref="./isacreator_images/ISAcreator_create_new_exp_button.png"
+                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_create_new_exp_button.png"
                 format="PNG"/></imageobject></mediaobject>
             . This will show the following screen offering 3 options</para>
         <para>
@@ -334,21 +334,21 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="500"
-                            fileref="./isacreator_images/ISAcreator-CreateStudyMenu_page.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-CreateStudyMenu_page.png"
                             format="PNG"/>
                     </imageobject>
                 </mediaobject>
             </screenshot>
         </para>
         <para>From this new page, select the  <mediaobject><imageobject><imagedata scale="30"
-            fileref="./isacreator_images/ISAcreator_create_manually_button.png"
+            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_create_manually_button.png"
             format="PNG"/></imageobject></mediaobject> button.</para>
         <para>The action brings you to the empty study view, which is the top level element of ISAcreator environment.</para>
         <screenshot>
             <mediaobject>
                 <imageobject>
                     <imagedata align="center" width="600"
-                        fileref="./isacreator_images/ISAcreator_CreateManual_page.png"
+                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_CreateManual_page.png"
                         format="PNG"/>
                 </imageobject>
             </mediaobject>
@@ -369,7 +369,7 @@
                      <para>Mousing over the File Menu and clicking it displays the full list of options for that entry:</para>
                      <para>
                          <mediaobject><imageobject> <imagedata scale="50"
-                                     fileref="./isacreator_images/ISAcreator-FileMenu-menu.png"
+                                     fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-FileMenu-menu.png"
                                      format="PNG"/></imageobject></mediaobject>
                      </para>
                     <para>As you can see, the full complement of classic save functions are there as well option to navigate back to the Main Menu page or leaving the application. 
@@ -380,7 +380,7 @@
                     <para>Mousing over the File Menu and clicking it displays the full list of options for that entry:</para>
                     <para>
                         <mediaobject><imageobject> <imagedata scale="30"
-                                    fileref="./isacreator_images/ISAcreator_StudyMenu-menu.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_StudyMenu-menu.png"
                                     format="PNG"/></imageobject></mediaobject>
                     </para>
                     <para>Simple actions to add or remove studies.
@@ -391,7 +391,7 @@
                     <para>Simple point and click actions for resizing ISAcreator application window:</para>
                     <para>
                         <mediaobject><imageobject><imagedata scale="40"
-                                    fileref="./isacreator_images/ISAcreator-ViewMenu-menu.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-ViewMenu-menu.png"
                                     format="PNG"/></imageobject></mediaobject>
                     </para>
                     <para>Keyboard shortcuts are available.</para>
@@ -404,7 +404,7 @@
                     <para>Help Menu</para>
                     <para>
                         <mediaobject><imageobject>  <imagedata scale="35"
-                                    fileref="./isacreator_images/ISAcreator-HelpMenu-menu.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-HelpMenu-menu.png"
                                     format="PNG"/></imageobject></mediaobject>
                      </para>
                      <para>In case you need additional information on how to use the tool or send feedback and contact the developer team.</para>
@@ -416,14 +416,14 @@
             <para>To add a new study, go the Study and click the
                 <mediaobject><imageobject> <imagedata 
                     scale="30" 
-                    fileref="./isacreator_images/ISAcreator-FileMenu-AddStudy-button.png"
+                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-FileMenu-AddStudy-button.png"
                     format="PNG"/></imageobject></mediaobject>
             </para>
             <para>Fill in the name of the study to be created and click the add button in the lower end of the sliding window:</para>
             <para> 
                 <mediaobject><imageobject><imagedata 
                 scale="40" 
-                fileref="./isacreator_images/ISAcreator-addstudy-window2.png"
+                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-addstudy-window2.png"
                 format="PNG"/></imageobject></mediaobject>
             </para>
             <para>You have now entered the Study Overview page. The view in the central pane is divided in 6 sections we are going to review. The upper left pane has changed to display a tree view whose top node is the name of the study,
@@ -437,7 +437,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="center" width="400"
-                                        fileref="./isacreator_images/ISAcreator_TextEditor_widget.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_TextEditor_widget.png"
                                         format="PNG"/>
                                 </imageobject>
                             </mediaobject>
@@ -450,7 +450,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="center" width="200"
-                                        fileref="./isacreator_images/ISAcreator_Calendar_widget.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_Calendar_widget.png"
                                         format="PNG"/>
                                 </imageobject>
                             </mediaobject>
@@ -471,7 +471,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="center" width="500"
-                                        fileref="./isacreator_images/ISAcreator_Publication_widget.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_Publication_widget.png"
                                         format="PNG"/>
                                 </imageobject>
                             </mediaobject>
@@ -480,7 +480,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="center" width="500"
-                                        fileref="./isacreator_images/ISAcreator_Publication_widget_results.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_Publication_widget_results.png"
                                         format="PNG"/>
                                 </imageobject>
                             </mediaobject>
@@ -489,7 +489,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="center" width="500"
-                                        fileref="./isacreator_images/ISAcreator_Publication+Editor_inplace_screenshot.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator_Publication+Editor_inplace_screenshot.png"
                                         format="PNG"/>
                                 </imageobject>
                             </mediaobject>
@@ -526,7 +526,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata scale="70"
-                                fileref="./isacreator_images/ISAcreator-spreadsheet-toolbar.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-spreadsheet-toolbar.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -538,7 +538,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata scale="40"
-                                fileref="./isacreator_images/ISAcreator-spreadsheet-view-add-row-widget.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-spreadsheet-view-add-row-widget.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -547,7 +547,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-spreadsheet-view-add-row-2.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-spreadsheet-view-add-row-2.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -559,7 +559,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata align="center" width="700"
-                                    fileref="./isacreator_images/ISAcreator-spreadsheet-view-add-column.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-spreadsheet-view-add-column.png"
                                     format="PNG"/>
                             </imageobject>
                         </mediaobject>
@@ -573,7 +573,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata align="center" width="700"
-                                    fileref="./isacreator_images/ISAcreator-spreadsheet-view-multiple-sort-widget.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-spreadsheet-view-multiple-sort-widget.png"
                                     format="PNG"/>
                             </imageobject>
                         </mediaobject>
@@ -590,7 +590,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata scale="25"
-                                    fileref="./isacreator_images/ISAcreator-transposed-view-Button.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-transposed-view-Button.png"
                                     format="PNG"/>
                             </imageobject>
                         </mediaobject>
@@ -602,7 +602,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata align="center" width="700"
-                                    fileref="./isacreator_images/ISAcreator-transposedview-details-page.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-transposedview-details-page.png"
                                     format="PNG"/>
                             </imageobject>
                         </mediaobject>
@@ -618,7 +618,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata scale="30"
-                                    fileref="./isacreator_images/ISAcreator-transposed-view-highlightOff-button.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-transposed-view-highlightOff-button.png"
                                     format="PNG"/>
                             </imageobject>
                         </mediaobject>
@@ -631,7 +631,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata scale="15"
-                                    fileref="./isacreator_images/ISAcreator-transposed-view-highlightOn-button.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-transposed-view-highlightOn-button.png"
                                     format="PNG"/>
                             </imageobject>
                         </mediaobject>
@@ -643,7 +643,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-transposed-view-highlighting-view.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-transposed-view-highlighting-view.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -656,7 +656,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata scale="35"
-                                    fileref="./isacreator_images/ISAcreator-transposed-view-Gotorecord-button.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-transposed-view-Gotorecord-button.png"
                                     format="PNG"/>
                             </imageobject>
                         </mediaobject>
@@ -670,7 +670,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata align="center" width="300"
-                                    fileref="./isacreator_images/ISAcreator-spreadsheet-autofill-function-1.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-spreadsheet-autofill-function-1.png"
                                     format="PNG"/>
                             </imageobject>
                         </mediaobject>
@@ -680,7 +680,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="center" width="300"
-                                        fileref="./isacreator_images/ISAcreator-spreadsheet-autofill-function-2.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-spreadsheet-autofill-function-2.png"
                                         format="PNG"/>
                                 </imageobject>
                             </mediaobject>
@@ -690,7 +690,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="center" width="300"
-                                        fileref="./isacreator_images/ISAcreator-spreadsheet-autofill-function-3.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-spreadsheet-autofill-function-3.png"
                                         format="PNG"/>
                                 </imageobject>
                             </mediaobject>
@@ -700,7 +700,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="center" width="300"
-                                        fileref="./isacreator_images/ISAcreator-spreadsheet-autofill-function-4.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-spreadsheet-autofill-function-4.png"
                                         format="PNG"/>
                                 </imageobject>
                             </mediaobject>
@@ -712,7 +712,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata scale="35"
-                                    fileref="./isacreator_images/ISAcreator-transposed-view-Gotorecord-button.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-transposed-view-Gotorecord-button.png"
                                     format="PNG"/>
                             </imageobject>
                         </mediaobject>
@@ -724,7 +724,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata scale="15"
-                            fileref="./isacreator_images/ISAcreator-Undo-Redo-button.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-Undo-Redo-button.png"
                             format="PNG"/>
                     </imageobject>
                 </mediaobject>
@@ -743,7 +743,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="700"
-                            fileref="./isacreator_images/ISAcreator-spreadsheet-view-group-highlight-factor.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-spreadsheet-view-group-highlight-factor.png"
                             format="PNG"/>
                     </imageobject>
                 </mediaobject>
@@ -753,7 +753,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="700"
-                            fileref="./isacreator_images/ISAcreator-spreadsheet-view-group-highlight.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-spreadsheet-view-group-highlight.png"
                             format="PNG"/>
                     </imageobject>
                 </mediaobject>
@@ -767,7 +767,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="700"
-                            fileref="./isacreator_images/ISAcreator-study-overview-widget.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-study-overview-widget.png"
                             format="PNG"/>
                     </imageobject>
                 </mediaobject>
@@ -777,7 +777,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="700"
-                            fileref="./isacreator_images/ISAcreator-study-overview-widget-group1.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-study-overview-widget-group1.png"
                             format="PNG"/>
                     </imageobject>
                 </mediaobject>
@@ -787,7 +787,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="700"
-                            fileref="./isacreator_images/ISAcreator-study-overview-widget-group2.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-study-overview-widget-group2.png"
                             format="PNG"/>
                     </imageobject>
                 </mediaobject>
@@ -812,7 +812,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-study-wizard-1.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-study-wizard-1.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -823,7 +823,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-study-wizard-2.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-study-wizard-2.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -835,7 +835,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-study-wizard-3.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-study-wizard-3.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -846,7 +846,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-study-wizard-4.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-study-wizard-4.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -858,7 +858,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-study-wizard-6.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-study-wizard-6.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -871,7 +871,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-study-wizard-7.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-study-wizard-7.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -882,7 +882,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-study-wizard-factorlevels-8.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-study-wizard-factorlevels-8.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -897,7 +897,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-mapper-startmapping.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-mapper-startmapping.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -908,7 +908,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-mapper-usewithpreviousmapping.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-mapper-usewithpreviousmapping.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -919,7 +919,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-mapper-assayselect.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-mapper-assayselect.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -930,7 +930,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-mapper-samplemapping.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-mapper-samplemapping.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -941,7 +941,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="400"
-                                fileref="./isacreator_images/ISAcreator-mapper-composing-elements.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-mapper-composing-elements.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -952,7 +952,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="500"
-                                fileref="./isacreator_images/ISAcreator-mapper-columnselector-empty.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-mapper-columnselector-empty.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -963,7 +963,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="200"
-                                fileref="./isacreator_images/ISAcreator-mapper-adding-fields.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-mapper-adding-fields.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -974,7 +974,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-mapper-sampleoverview.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-mapper-sampleoverview.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -985,7 +985,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-mapper-assaymapping-1.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-mapper-assaymapping-1.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -996,7 +996,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-mapper-assayoverview.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-mapper-assayoverview.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -1007,7 +1007,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-mapper-savemapping-1.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-mapper-savemapping-1.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -1018,7 +1018,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-mapper-savemapping-2.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-mapper-savemapping-2.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -1038,7 +1038,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-plugin-QRcode-1.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-plugin-QRcode-1.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -1049,7 +1049,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-plugin-QRcode-2.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-plugin-QRcode-2.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -1062,7 +1062,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-plugin-QRcode-3.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-plugin-QRcode-3.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -1073,7 +1073,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-plugin-QRcode-4.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-plugin-QRcode-4.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -1084,7 +1084,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-plugin-QRcode-5.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-plugin-QRcode-5.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -1095,7 +1095,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="500"
-                                fileref="./isacreator_images/ISAcreator-plugin-QRcode-6.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-plugin-QRcode-6.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -1106,7 +1106,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-plugin-QRcode-7.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-plugin-QRcode-7.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -1125,7 +1125,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-Term-Tagger-1.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-Term-Tagger-1.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -1137,7 +1137,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-Term-Tagger-2.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-Term-Tagger-2.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -1148,7 +1148,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-Term-Tagger-3.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-Term-Tagger-3.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -1159,7 +1159,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-Term-Tagger-4.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-Term-Tagger-4.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -1170,7 +1170,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="500"
-                                fileref="./isacreator_images/ISAcreator-Term-Tagger-5.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-Term-Tagger-5.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -1181,7 +1181,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="700"
-                                fileref="./isacreator_images/ISAcreator-Term-Tagger-6.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isacreator_images/ISAcreator-Term-Tagger-6.png"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
