@@ -121,7 +121,7 @@ to provide BII-Manager with database connection information, a location where to
                         <imageobject>
                             <!-- width="500"-->
                             <imagedata align="center" scalefit="1" width="85%"
-                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/biiwebapp_images/BII-web-app-checking-jboss-port8080.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/biiwebapp_images/BII-web-app-checking-jboss-port8080.png?raw=true"
                                 format="PNG"/>
                         </imageobject>
                     </mediaobject>
@@ -231,7 +231,7 @@ to provide BII-Manager with database connection information, a location where to
                         <mediaobject>
                             <imageobject>
                                 <imagedata scale="50"
-                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_doc/biidatamanager_images/BII-datamanager-folder-content.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/biidatamanager_images/BII-datamanager-folder-content.png?raw=true"
                                     format="PNG"/>     
                             </imageobject>
                         </mediaobject>
@@ -322,7 +322,7 @@ to provide BII-Manager with database connection information, a location where to
                     <mediaobject>
                         <imageobject>
                             <imagedata scale="50"
-                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/biiwebapp_images/BII-web-application-folder-content.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/biiwebapp_images/BII-web-application-folder-content.png?raw=true"
                                 format="PNG"/>     
                         </imageobject>
                     </mediaobject>
@@ -457,7 +457,7 @@ to provide BII-Manager with database connection information, a location where to
                           <mediaobject>
                               <imageobject> <!-- width="800" -->
                                   <imagedata align="center" scalefit="1" width="85%" 
-                                      fileref="https://github.com/ISA-tools/Docbooks/blob/master/biiwebapp_images/BII-web-app-database-newUI.png"
+                                      fileref="https://github.com/ISA-tools/Docbooks/blob/master/biiwebapp_images/BII-web-app-database-newUI.png?raw=true"
                                       format="PNG"/>     
                               </imageobject>
                           </mediaobject>

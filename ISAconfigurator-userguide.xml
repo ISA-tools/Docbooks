@@ -97,9 +97,9 @@
         </sect2>
         <sect2>
             <title>Getting the software</title>
-            <para>ISAconfigurator latest build is available <link xlink:href="https://github.com/downloads/ISA-tools/ISAconfigurator/ISAconfigurator-1.2.zip">here</link> in its cross platform form</para>
+            <para>ISAconfigurator latest build is available <link xlink:href="https://github.com/downloads/ISA-tools/ISAconfigurator/ISAconfigurator-1.4-All.zip">here</link> in its cross platform form</para>
             <para>For <trademark>Mac</trademark> users, we also provide a dedicated version
-                available <link xlink:href="https://github.com/downloads/ISA-tools/ISAconfigurator/ISAconfigurator-1.2-Mac.zip">here</link>
+                available <link xlink:href="https://github.com/downloads/ISA-tools/ISAconfigurator/ISAconfigurator-1.4.dmg">here</link>
             </para>
         </sect2>
         <sect2>
@@ -127,7 +127,7 @@
                 <sect3>
                     <title>Starting ISAconfigurator by double-clicking</title>
                     <para>Provided the requirements described in section 1 have been met, ISAconfigurator
-                        software can be started by simply double clicking the ISAconfigurator-1.2.jar
+                        software can be started by simply double clicking the ISAconfigurator-1.4.jar
                         file</para>
                 </sect3>
                 <sect3>
@@ -139,11 +139,11 @@
                         <orderedlist>
                             <listitem><para>open a terminal</para></listitem>
                             <listitem><para>navigate to ISAcconfigurator installation folder</para>
-                                <para> <prompt>c:>cd /Users/JohnSmith/ISAconfigurator-1.2/</prompt></para>
+                                <para> <prompt>c:>cd /Users/JohnSmith/ISAconfigurator-1.4/</prompt></para>
                                 <para>Windows OS users, use "\" instead.</para>
                             </listitem>
                             <listitem><para>issue the following command:</para> 
-                              <para><prompt>c:>java -jar -Xms256m -Xmx1024m ISAconfigurator-1.2.jar</prompt></para>
+                              <para><prompt>c:>java -jar -Xms256m -Xmx1024m ISAconfigurator-1.4.jar</prompt></para>
                                <para>Watch out for placing spaces correctly and remember that arguments are case sensitive. Xms and Xmx parameters
                                    allow to set the minimal and maximal amount of memory available to the java virtual machine (jvm) used by ISAcreator.</para>
                             </listitem>
@@ -162,7 +162,7 @@
                                     <mediaobject>
                                         <imageobject>
                                             <imagedata align="center" width="500"
-                                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-mainmenu-page.png"
+                                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-mainmenu-page.png?raw=true"
                                                 format="PNG"/>     
                                         </imageobject>
                                     </mediaobject>
@@ -210,7 +210,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="600"
-                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfiguration-create-new-blankpage.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfiguration-create-new-blankpage.png?raw=true"
                             format="PNG"/>     
                     </imageobject>
                 </mediaobject>
@@ -224,7 +224,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="left" width="250"
-                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-menu-File.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-menu-File.png?raw=true"
                                 format="PNG"/>     
                         </imageobject>
                     </mediaobject>
@@ -237,7 +237,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata align="left" width="250"
-                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-mapping-menu.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-mapping-menu.png?raw=true"
                                     format="PNG"/>     
                             </imageobject>
                         </mediaobject>
@@ -254,7 +254,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata align="left" width="150"
-                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfiguration-add-table-choice.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfiguration-add-table-choice.png?raw=true"
                                     format="PNG"/>     
                             </imageobject>
                         </mediaobject>
@@ -266,7 +266,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata scale="50"
-                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfiguration-add-define-table.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfiguration-add-define-table.png?raw=true"
                                     format="PNG"/>     
                             </imageobject>
                         </mediaobject>
@@ -281,7 +281,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata scale="25"
-                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfiguration-add-element-button.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfiguration-add-element-button.png?raw=true"
                             format="PNG"/>     
                     </imageobject>
                 </mediaobject>
@@ -296,7 +296,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="600"
-                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfiguration-add-element-predefined.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfiguration-add-element-predefined.png?raw=true"
                                 format="PNG"/>     
                         </imageobject>
                     </mediaobject>
@@ -308,7 +308,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata align="center" width="500"
-                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfiguration-add-element-structural.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfiguration-add-element-structural.png?raw=true"
                                     format="PNG"/>     
                             </imageobject>
                         </mediaobject>
@@ -320,7 +320,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata align="center" width="600"
-                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfiguration-add-element-custom-list.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfiguration-add-element-custom-list.png?raw=true"
                                     format="PNG"/>     
                             </imageobject>
                         </mediaobject>
@@ -335,7 +335,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="600"
-                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-datatype-string.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-datatype-string.png?raw=true"
                                 format="PNG"/>     
                         </imageobject>
                     </mediaobject>
@@ -347,7 +347,7 @@
                                 <mediaobject>
                                     <imageobject>
                                         <imagedata align="left" width="600"
-                                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-parameter-string-regex-1.png"
+                                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-parameter-string-regex-1.png?raw=true"
                                             format="PNG"/>     
                                     </imageobject>
                                 </mediaobject>
@@ -359,7 +359,7 @@
                                 <mediaobject>
                                     <imageobject>
                                         <imagedata align="left" width="600"
-                                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-parameter-string-regex-2.png"
+                                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-parameter-string-regex-2.png?raw=true"
                                             format="PNG"/>     
                                     </imageobject>
                                 </mediaobject>
@@ -372,7 +372,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="left" width="500"
-                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-datatype-integer.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-datatype-integer.png?raw=true"
                                 format="PNG"/>     
                         </imageobject>
                     </mediaobject>
@@ -382,7 +382,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="left" width="500"
-                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-datatype-double.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-datatype-double.png?raw=true"
                                 format="PNG"/>     
                         </imageobject>
                     </mediaobject>
@@ -392,7 +392,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="left" width="500"
-                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-datatype-boolean.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-datatype-boolean.png?raw=true"
                                 format="PNG"/>     
                         </imageobject>
                     </mediaobject>
@@ -402,7 +402,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="left" width="500"
-                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-datatype-list.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-datatype-list.png?raw=true"
                                 format="PNG"/>     
                         </imageobject>
                     </mediaobject>
@@ -412,7 +412,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata align="left" width="500"
-                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-datatype-date.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-datatype-date.png?raw=true"
                                     format="PNG"/>     
                             </imageobject>
                         </mediaobject>
@@ -423,7 +423,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="left" width="500"
-                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-ontology-selection-widget-0.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-ontology-selection-widget-0.png?raw=true"
                                 format="PNG"/>     
                         </imageobject>
                     </mediaobject>
@@ -432,7 +432,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="left" width="500"
-                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-ontology-selection-widget-1.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-ontology-selection-widget-1.png?raw=true"
                                         format="PNG"/>     
                                 </imageobject>
                             </mediaobject>
@@ -441,7 +441,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="left" width="700"
-                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-ontology-selection-widget-2.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-ontology-selection-widget-2.png?raw=true"
                                         format="PNG"/>     
                                 </imageobject>
                             </mediaobject>
@@ -450,7 +450,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="left" width="700"
-                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-ontology-selection-widget-3.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-ontology-selection-widget-3.png?raw=true"
                                         format="PNG"/>     
                                 </imageobject>
                             </mediaobject>
@@ -459,7 +459,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="left" width="700"
-                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-ontology-selection-widget-4.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-ontology-selection-widget-4.png?raw=true"
                                         format="PNG"/>     
                                 </imageobject>
                             </mediaobject>
@@ -470,7 +470,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata scale="35"
-                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-ontology-selection-widget-remove button.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-ontology-selection-widget-remove button.png?raw=true"
                                         format="PNG"/>     
                                 </imageobject>
                             </mediaobject>
@@ -481,7 +481,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="left" width="700"
-                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-ontology-selection-widget-5.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-ontology-selection-widget-5.png?raw=true"
                                         format="PNG"/>     
                                 </imageobject>
                             </mediaobject>
@@ -490,7 +490,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata align="left" width="500"
-                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-ontology-selection-widget-6.png"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-ontology-selection-widget-6.png?raw=true"
                                         format="PNG"/>     
                                 </imageobject>
                             </mediaobject>
@@ -522,7 +522,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="500"
-                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-behaviour-attributes.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-behaviour-attributes.png?raw=true"
                                 format="PNG"/>     
                         </imageobject>
                     </mediaobject>
@@ -539,7 +539,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata align="center" width="500"
-                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-define-template-for-wizard.png"
+                                    fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-define-template-for-wizard.png?raw=true"
                                     format="PNG"/>     
                             </imageobject>
                         </mediaobject>
@@ -557,7 +557,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata align="center" width="500"
-                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfiguration-loaded-config-page.png"
+                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfiguration-loaded-config-page.png?raw=true"
                                 format="PNG"/>     
                         </imageobject>
                     </mediaobject>
@@ -569,7 +569,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="500"
-                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-Node-1.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-Node-1.png?raw=true"
                             format="PNG"/>     
                     </imageobject>
                 </mediaobject>
@@ -584,7 +584,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="500"
-                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-Node-1.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-Node-1.png?raw=true"
                             format="PNG"/>     
                     </imageobject>
                 </mediaobject>
@@ -606,7 +606,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata align="center" width="500"
-                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-mibbi-checkout-page.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isaconfigurator_images/ISAconfigurator-mibbi-checkout-page.png?raw=true"
                             format="PNG"/>     
                     </imageobject>
                 </mediaobject>
@@ -627,7 +627,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata scale="30"
-                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isa-common-images/bugs.png"
+                            fileref="https://github.com/ISA-tools/Docbooks/blob/master/isa-common-images/bugs.png?raw=true"
                             format="PNG"/>     
                     </imageobject>
                 </mediaobject>
