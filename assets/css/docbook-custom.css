@@ -1,0 +1,148 @@
+body { 
+ font-family : sans-serif;
+ font-size : 16px;
+ background-color : #FFFFFF;
+}
+ 
+.important { color : blue; }
+.caution { color : red; }
+
+a {
+    color: #0097D0;
+}
+
+a:hover {
+    color: #0097D0;
+}
+
+a:active{
+  color: #0097D0;  
+}
+
+a:visited{
+    color: rgb(140,198,63);
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+	color: #0097D0;
+	}
+
+h2 {
+	font-size: 35px;
+	text-align: left;
+	color: #0097D0;
+	}
+	
+h3 {
+	font-size: 25px;
+	text-align: left;
+	color: #0097D0;
+	}
+
+h4 {
+	font-size: 20px;
+	text-align: left;
+	color:gray;
+	}
+
+h5 {
+	font-size: 15px;
+	text-align: left;
+	color: #0097D0;
+	}
+
+p { 
+	display: block;
+	font-family: arial;
+	color: #424242;
+	}
+
+toc {
+	display: block;
+	font-family: times;
+	color: red;
+}
+	
+.title{
+    color: #0097D0;
+}
+.orgname {
+font-size: 20px;
+	color: #0097D0;
+	text-align: center;
+}
+.address {
+font-size: 20px;
+	color: #0097D0;
+	text-align: center;
+	}	
+.city {
+font-size: 20px;
+	color: #0097D0;
+	text-align: center;
+	}
+.street {
+font-size: 20px;
+	color: #0097D0;
+	text-align: center;
+	}	
+.postcode {
+font-size: 20px;
+	color: #0097D0;
+	text-align: center;
+	}
+.country {
+font-size: 20px;
+	color: #0097D0;
+	text-align: center;
+	}		
+	
+.pubdate {
+	text-align: center;
+	}
+.releaseinfo {
+	text-align: center;
+	}
+.legalnotice {
+	text-align: center;
+	}
+
+.email {
+	font-family: arial;
+	font-size: 14px;
+	text-align: center;	
+	}
+	
+.note {
+    background-color: #FFFFFF;
+    border: 1px solid #2E2E2E ;
+
+}
+.warning {
+	font-family: arial;
+	color: red;
+	background-color: #FFFFFF;
+	border: 1px solid #2E2E2E ;
+}
+	
+.programlisting {
+	color: blue;
+	background-color: #BDBDBD;
+	border: 1px solid #2E2E2E ;
+}
+
+.prompt {
+	background-color: #BDBDBD;
+	}		
+
+.copyright{
+    text-align: center;    
+    }
+
+
+.code {
+font-weight: bold;
+    color: black;
+}
