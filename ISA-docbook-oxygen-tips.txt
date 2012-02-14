@@ -32,7 +32,24 @@ The result of the xsl transformation applied to the isa docbook should now be fo
 
 
 tip:
-if the inclusion of a snippet of xml code in a docbook document is needed, use the <!CDATA[ opening element and ]]> closing element to insert those snippets.
+if the inclusion of a snippet of xml code in a docbook document is needed, use the <![CDATA[ opening element and ]]> closing element to insert those snippets as in:
+
+<programlisting>
+<![CDATA[
+This is a programlisting so white       space and line
+breaks are significant.  But it is also a CDATA
+section so <emphasis>tags</emphasis> and &entities;
+are not recognized.  The only markup that is recognized
+is the end-of-section marker, which is two
+"]"'s in a row followed by a >.
+
+]]>
+
+</programlisting>
+
+
+
+
 use css to style them as necessary.
 
 warning: it causes the xml snippet to be excluded from the pdf conversion though

@@ -38,5 +38,6 @@
 	<xi:include href="BII-Data-Manager-userguide.xml"/>
 <!--	<xi:include href="biidatamanager_doc/BII-Data-Manager-userguide.xml"/>-->
 	<xi:include href="ISAconfigurator-userguide.xml"/>
-	<xi:include href="ISAcreator-userguide.xml"/>	
+	<xi:include href="ISAcreator-userguide.xml"/>
+	<xi:include href="ISA-developper-documentation.xml"/>	
 </book>

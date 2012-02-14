@@ -112,7 +112,7 @@ to provide BII-Manager with database connection information, a location where to
                     <listitem><para><link xlink:href="http://sourceforge.net/projects/jboss/files/JBoss/JBoss-4.2.3.GA">4.2.3 GA</link></para></listitem>
                     <listitem><para><link xlink:href="http://sourceforge.net/projects/jboss/files/JBoss/JBoss-5.0.1.GA">5.0.1 GA</link></para></listitem>
                     <listitem><para><link xlink:href="http://sourceforge.net/projects/jboss/files/JBoss/JBoss-5.1.0.GA">5.1.0 GA</link></para></listitem>
-                    <listitem><para><link xlink:href="http://sourceforge.net/projects/jboss/files/JBoss/JBoss-6.0.0.Final">6.0.0 Final</link></para></listitem>
+                   <!-- <listitem><para><link xlink:href="http://sourceforge.net/projects/jboss/files/JBoss/JBoss-6.0.0.Final">6.0.0 Final</link></para></listitem> -->
                 </itemizedlist>
                 Do check that JBoss web application server has been correctly installed. If testing on your local machine, open a web browser and point it to the following URL, <code>http://localhost:8080</code>
                 It should show the following:
@@ -317,22 +317,22 @@ to provide BII-Manager with database connection information, a location where to
                 <title>
                     Editing <code>profiles.xml</code> file to configure BII-Web application 1.4
                 </title>
-                <para>After having downloaded and uncompressed the BII-Web Application archive, navigate the <code>./BioInvIndex-1.4/</code>. The folder content should look like this: 
-                <screenshot>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata scale="50"
-                                fileref="https://github.com/ISA-tools/Docbooks/blob/master/biiwebapp_images/BII-web-application-folder-content.png?raw=true"
-                                format="PNG"/>     
-                        </imageobject>
-                    </mediaobject>
-                </screenshot>
-                
-                Open the profiles.xml file in a text editor and navigate the relevent database profile (choose from h2, mysql, postgres or oracle).
-                <orderedlist>
-                    <listitem><para>database configuration parameters</para>
-                        <para>The example below is for a mysql environment
-                            <programlisting>
+                <para>After having downloaded and uncompressed the BII-Web Application archive,
+                        navigate the <code>./BioInvIndex-1.4/</code>. The folder content should look
+                        like this: <screenshot>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata scale="50"
+                                        fileref="https://github.com/ISA-tools/Docbooks/blob/master/biiwebapp_images/BII-web-application-folder-content.png?raw=true"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot> Open the <code>profiles.xml</code> file in a text editor
+                        and navigate the relevent database profile (choose from h2, mysql, postgres
+                        or oracle). <orderedlist>
+                            <listitem>
+                                <para>database configuration parameters</para>
+                                <para>The example below is for a mysql environment <programlisting>
                             <![CDATA[ 
                                 <profile>
                                     <id>mysql</id>
@@ -351,11 +351,11 @@ to provide BII-Manager with database connection information, a location where to
                                     </properties>
                               </profile>]]>
                         </programlisting>
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>set location to the lucene index file, required for database indexing and searches
-                            <programlisting>
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>set location to the lucene index file, required for database
+                                    indexing and searches <programlisting>
                                <![CDATA[
                                <profile>
                                     <id>index_local</id>
@@ -367,46 +367,67 @@ to provide BII-Manager with database connection information, a location where to
                                     </properties>
                                 </profile>]]>                
                             </programlisting>
-                            <note>
-                                <para>The path supplied to the indexBase should be the absolute path.</para>
-                            </note>
-                            <warning>
-                                <para>Ensure that this path matches the one used when configuring the BII-Data-Manager while editing the hibernate.properties files. Failing to do will results in failure to properly list
-                                studies from the web application, and prevent from carrying out normal searches. Do double check!</para>
-                            </warning>                                
-                        </para>
-                    </listitem>
-                </orderedlist>
-                
-                </para>
+                                    <note>
+                                        <para>The path supplied to the indexBase should be the
+                                            absolute path.</para>
+                                    </note>
+                                    <warning>
+                                        <para>Ensure that this path matches the one used when
+                                            configuring the BII-Data-Manager while editing the
+                                            hibernate.properties files. Failing to do will results
+                                            in failure to properly list studies from the web
+                                            application, and prevent from carrying out normal
+                                            searches. Do double check!</para>
+                                    </warning>
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </para>
             </sect4>
             <sect4>
                 <title>
-                    Building BII-web application with Maven
+                    Building BII-web application from source with Maven
                 </title>
                 <note> <para>This step requires Maven to be installed and properly configured. See section 1 for more information.</para></note>
+                <note><para>What is Maven? The project relies on many dependencies, has many tests and needs to be easy to build. Maven is used to control the project dependencies, run tests and perform software life cycle operations. We suggest that you download version 2.2.1 <link xlink:href="http://maven.apache.org/download.html">http://maven.apache.org/download.html</link> of the Maven project.
+                    We have noticed some inconsistencies in version 3.1 of Maven and we haven't throughly tested it yet, so it's better to go with 2.2.1 for now.</para></note>
                 <para>
-                    Once the <code>'profiles.xml'</code> has been edited as instructed and save, it is possible to build the BII web application by issuing the following command:
-                    <itemizedlist>
-                        <listitem>
-                            <para>Using an H2 database</para>
-                            <para><prompt>>mvn clean package -Pdeploy,h2,index_local</prompt></para>
-                        </listitem>
-                        <listitem>
-                            <para>Using an Oracle database</para>
-                            <para><prompt>>mvn clean package -Pdeploy,oracle,index_local</prompt></para>
-                        </listitem>
-                        <listitem>
-                            <para>Using an mySQL database</para>
-                            <para><prompt>>mvn clean package -Pdeploy,mysql,index_local</prompt></para>
-                        </listitem>
-                        <listitem>
-                            <para>Using an PostgreSQL database</para>
-                            <para><prompt>>mvn clean package -Pdeploy,postgresql,index_local</prompt></para>
-                        </listitem>
-                    </itemizedlist>
-                    If all goes well, the process will create a 'target' directory as follows: <code>./BioInvIndex-1.3/ear/target</code> containing the <code>bii-1.3.ear</code> file.
+                    When you check out the code, you will see that there is a file in the top level directory called profiles.xml.distro. You should copy this file and rename is as profiles.xml. Then, find the database profile suitable for you (MySQL, PostgreSQL, H2 or Oracle) and edit the profile to include the proper database connection url, username and password.
+                    Further to this, you need to configure where you Lucene index will be located (Lucene indexes make searching quicker). 
+                    To do this, find the profile named index_local and edit the path to go to your preferred location. You should copy this file and place it in the EAR folder as well.
+                    We hope to remove this redundant operation soon!
                 </para>
+                
+                <para> Once the <code>'profiles.xml'</code> has been edited as instructed and save,
+                        it is possible to build the BII web application by issuing the following
+                        command: <itemizedlist>
+                            <listitem>
+                                <para>Using an H2 database</para>
+                                <para><prompt>>mvn clean package -Dmaven.test.skip=true
+                                        -Pdeploy,h2,index_local</prompt></para>
+                            </listitem>
+                            <listitem>
+                                <para>Using an Oracle database</para>
+                                <para><prompt>>mvn clean package -Dmaven.test.skip=true
+                                        -Pdeploy,oracle,index_local</prompt></para>
+                            </listitem>
+                            <listitem>
+                                <para>Using an mySQL database</para>
+                                <para><prompt>>mvn clean package -Dmaven.test.skip=true
+                                        -Pdeploy,mysql,index_local</prompt></para>
+                            </listitem>
+                            <listitem>
+                                <para>Using an PostgreSQL database</para>
+                                <para><prompt>>mvn clean package -Dmaven.test.skip=true
+                                        -Pdeploy,postgresql,index_local</prompt></para>
+                            </listitem>
+                        </itemizedlist></para>
+                <para>Briefly put, this line tells maven to clean the current target folders (the place where the maven builds go), then package up the EAR (Enterprise Archive, it's like a WAR, only the enterprise version :)) to give you your web application. The option <code>-Dmaven.test.skip=true</code> tells Maven to skip the tests, since it should have been tested beforehand, and the last parts tells Maven which build profiles to use. In the example above, I've told maven to build the application using the deploy (to build the ear), h2 database and the index_local profiles.
+                    When the maven package goal runs, it should complete (hopefully with no errors) and inside the ear/target directory, you will have a bii-<![CDATA[<>]]>.ear file.
+                    Copy this to the server/default/deploy directory of your JBoss installation and then start your JBoss server to hopefully see a BII web front end!</para>
+                    <para> If all goes well, the process will create a 'target' directory as
+                        follows: <code>./BioInvIndex-1.3/ear/target</code> containing the
+                            <code>bii-1.3.ear</code> file. </para>
             </sect4> 
             <sect4>
                 <title>

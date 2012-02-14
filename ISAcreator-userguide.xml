@@ -1191,7 +1191,65 @@
 
 
     </sect1>
-    
+    <sect1>
+        <title>Creating an ISAcreator WebStart application</title>
+        <sect2>
+            <title></title>
+            <para>One of the advantages of creating a webstart application is that it’s pretty much point and click. From a browser page, users can gain access to your Java tool relatively quickly.
+                
+                To deploy a JNLP version of ISAcreator within your organisation, you should follow the following steps…
+                <orderedlist>
+                    <listitem> <para>    1. Get the ISAcreator Jar file you wish to expose via the web.</para></listitem>
+                    <listitem> <para> 2. You need to digitally sign the Jar file using a jarsigner. there are two steps to this process:</para>
+                        <orderedlist>
+                            <listitem>
+                                <para> a. Create your key store with an alias (name) using keytool</para>
+                                <para><prompt> keytool -genkey -keystore isatools-keys -alias ISAcreator</prompt></para>
+                            </listitem>
+                            <listitem><para> b. Sign the ISAcreator jar file using the key you have just generated</para>
+                                <para><prompt>jarsigner -keystore isatools-keys ISAcreator-x.y.jar
+                                        ISAcreator</prompt></para>
+                            </listitem>
+                        </orderedlist>
+                    </listitem>
+                
+             <listitem> <para>3. Create a JNLP file describing the tool and where the Jar file is located, replacing the
+                            baseurl text with the URL of where the ISAcreator.jnlp file etc. are
+                            located : <programlisting>
+                     <![CDATA[               
+                     
+                     <?xml version="1.0" encoding="utf-8"?>
+                     <jnlp spec="1.0+" codebase="baseURL" href="ISAcreator.jnlp">
+                     <information>                            
+                             <title>ISAcreator x.y</title>                           
+                             <vendor>ISAtools team, University of Oxford, UK</vendor>
+                             <homepage href="http://isatools.org" />                            
+                             <description>ISAcreator</description>                            
+                             <version>1.3</version>                           
+                             <icon href="baseURL/isacreator_logo.jpg"/>                    
+                             <offline-allowed/>                           
+                         </information>                       
+                         <security>                         
+                             <all-permissions/>                           
+                         </security>                      
+                         <resources>
+                             <j2se version="1.5+"/>
+                            <jar href="baseURL/ISAcreator-x.y.jar"/>
+                         </resources>
+                       </jnlp>
+                     ]]>
+                 </programlisting>
+                        </para>  
+             </listitem>
+                    <listitem><para>
+                        Now deploy the files to your web server of choice and link to the JNLP file to allow users to download ISAcreator to their machine. An example instance is running at: 
+                        <link xlink:href="http://www.antarctic-design.co.uk/isacreator/ISAcreator.jnlp"> </link>http://www.antarctic-design.co.uk/isacreator/ISAcreator.jnlp
+                    </para></listitem>
+                </orderedlist>
+            </para>
+        </sect2>
+        
+    </sect1>
   
        
         
