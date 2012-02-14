@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" type="xml"?>
+
+<chapter id="isadevdoc" chunked="0" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.0">
+<info> 
+        <title>ISA developer documentation</title>
+<!--<author>
+<orgname>ISA Team</orgname>
+<address>
+<city>Oxford</city>
+<street>7 Keble Road</street>
+<postcode>OX1 3QG</postcode>
+<country>United Kingdom</country>
+</address>
+<email>isatools@googlegroups.com</email>
+</author>-->
+        <releaseinfo>ISA developer documentation 1.0 alpha</releaseinfo>
+        <pubdate>2012-02-14</pubdate>
+        <legalnotice>
+            <para>
+
+                    This documentation is distributed under           
+                    <screenshot>               
+                        <mediaobject>
+                            <imageobject>
+                                
+                                <imagedata scale="15" align="center"
+                                    fileref="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+                                    format="PNG"/>
+                                
+                            </imageobject>
+                        </mediaobject>                 
+                    </screenshot>
+                    <link xlink:href="http://creativecommons.org/licenses/by-sa/3.0/"> </link>
+
+            </para>
+        </legalnotice>   
+    </info>
+    
+    <sect1 id="isadevdoc.intro">
+        <title>Introduction</title>
+        <para>All source code for ISA tools and ISA infrastructure is released and made available through GitHub from the following location <link xlink:href="https://github.com/ISA-tools">ISA-tools</link> </para>
+        <para>GitHub offers very advanced features for collaborative development. Potential contributors should get familiar with this environment and we encourage reading the <link xlink:href="http://help.github.com/">help provided by Github</link></para>
+        <sect2>
+        <title>Basic instructions for committers</title>
+        <itemizedlist>
+            <listitem><para>Ignoring directories and files generated from IDEs</para>
+                <para>Create a globally accessible file for Git to access via this command: <code>git config --global core.excludesfile ~/.gitignore_global</code></para>
+                <para>Then, add the following lines (or modify to ignore files created by Eclipse for instance) and save. Git will then ignore the files on commit. You may need to add the -a option when committing, so <code>git commit -a -m "my commit message"</code></para>
+               <para>
+                <itemizedlist>
+                    <listitem><para>#Ignored IDE files
+                        <itemizedlist>
+                            <listitem><para><code>*.iml</code></para></listitem>
+                            <listitem><para><code>*.ipr</code></para></listitem>
+                            <listitem><para><code>*.log</code></para></listitem>
+                            <listitem><para><code>*.sup</code></para></listitem>
+                        </itemizedlist>
+                    </para></listitem>
+                    <listitem>
+                        <para>#Ignored Build Directories
+                            <itemizedlist>
+                                <listitem><para><code>target/</code></para></listitem>
+                            </itemizedlist>
+                        </para>
+                    </listitem>                
+                    <listitem>
+                        <para>#OS generate files
+                            <itemizedlist>
+                                <listitem><para><code>.DS_Store?</code></para></listitem>
+                                <listitem><para><code>Thumbs.db</code></para></listitem>
+                                <listitem><para><code> Icon?</code></para></listitem>
+                            </itemizedlist>
+                          </para>
+                    </listitem>
+
+                    
+                </itemizedlist>
+                </para>
+            </listitem>
+        </itemizedlist>
+        </sect2>
+        <sect2>
+            <title>Remove sensitive information</title>
+            <para>Remember to remove all passwords and key information prior to committing.</para>
+        </sect2>
+    </sect1>
+ 
+   
+   
+</chapter>
